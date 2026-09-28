@@ -86,7 +86,14 @@
         <li class="dated-entry">
           <span class="date">{{ x.date }}</span>
           <div class="entry-body">
-            <div><strong>{{ x.degree }}</strong>, {{ x.institution }}</div>
+            <div>
+              <strong>{{ x.degree }}</strong>,
+              {% if x.url and x.url != "" %}
+                <a class="institution-link" href="{{ x.url }}">{{ x.institution }}</a>
+              {% else %}
+                {{ x.institution }}
+              {% endif %}
+            </div>
             {% if x.thesis and x.thesis != "" %}
               <div class="detail">Thesis: {{ x.thesis }}</div>
             {% endif %}

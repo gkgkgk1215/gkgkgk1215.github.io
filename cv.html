@@ -46,7 +46,11 @@ permalink: /cv/
         <div class="date">{{ x.date }}</div>
         <div>
           <strong>{{ x.degree }}</strong><br>
-          {{ x.institution }}
+          {% if x.url and x.url != "" %}
+            <a class="institution-link" href="{{ x.url }}">{{ x.institution }}</a>
+          {% else %}
+            {{ x.institution }}
+          {% endif %}
           {% if x.thesis and x.thesis != "" %}<div class="detail">Thesis: {{ x.thesis }}</div>{% endif %}
         </div>
       </div>
@@ -63,7 +67,13 @@ permalink: /cv/
           {% if period_parts.size > 1 %}<div>{{ period_parts[1] }}</div>{% endif %}
         </div>
         <div>
-          <strong>{{ x.organization }}</strong><br>
+          <strong>
+            {% if x.url and x.url != "" %}
+              <a class="institution-link" href="{{ x.url }}">{{ x.organization }}</a>
+            {% else %}
+              {{ x.organization }}
+            {% endif %}
+          </strong><br>
           {{ x.location }}<br>
           {{ x.position }}
         </div>
