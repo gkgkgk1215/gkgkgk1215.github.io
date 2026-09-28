@@ -1,4 +1,4 @@
-- date: 2026. 7
+- date: "2026. 07. 00"
   title: Excellence Award (2nd Overall)
   selected: true
   home_rank: 1
@@ -8,7 +8,7 @@
   - Ministry of Trade, Industry and Energy Award
   - 'DGIST SurGLab demonstrated autonomous manipulation accuracy and system stability across four manufacturing-field missions: part sorting, box transport, sequential assembly, and wheel fastening.'
   url: ''
-- date: 2026. 6
+- date: "2026. 06. 00"
   title: 1st Place Award
   selected: true
   home_rank: 2
@@ -17,13 +17,13 @@
   - “Autonomous AI, Real dVRK Track”
   - AI for Robotic Surgery Competition, IEEE International Conference on Robotics and Automation (ICRA 2026)
   url: ''
-- date: 2026. 6
+- date: "2026. 06. 00"
   title: 2nd Place Award
   details:
   - “Human Teleoperation, Sim dVRK Track”
   - AI for Robotic Surgery Competition, IEEE International Conference on Robotics and Automation (ICRA 2026)
   url: ''
-- date: 2026. 4.
+- date: "2026. 04. 00"
   title: Excellence Award
   selected: true
   home_rank: 3
@@ -33,30 +33,30 @@
   - Humanoid Real-World Challenge
   - (Hosted by Korea Institute for Robot Industry Advancement, KIRIA)
   url: ''
-- date: 2023. 2.
+- date: "2023. 02. 00"
   title: Outstanding Paper Award
   details:
   - “Hysteresis Compensation of Flexible Continuum Manipulator using Deep Neural Network”
   - The 19th Korea Robotics Society Annual Conference (KRoC 2023)
   url: ''
-- date: 2022. 11
+- date: "2022. 11. 00"
   title: Outstanding Paper Award
   details:
   - “Design of a Multi-bending Flexible Manipulator for Gastrointestinal Surgery”
   - The 13th Korean Society of Medical Robotics
   url: ''
-- date: 2022. 6
+- date: "2022. 06. 00"
   title: Outstanding Young Researcher Award
   details:
   - The 37th Institute of Control, Robotics, and Systems Annual Conference (ICROS)
   url: ''
-- date: 2021. 10
+- date: "2021. 10. 00"
   title: Best Paper Award
   details:
   - “Efficient Calibration Method of Cable-driven Robot using RGBD Fiducial Sensing and Recurrent Neural Network”
   - The 12th Korean Society of Medical Robotics
   url: ''
-- date: 2019. 11
+- date: "2019. 11. 00"
   title: Top 10 Mechanical Engineering Technology of 2019
   selected: true
   home_rank: 4
@@ -65,13 +65,13 @@
   - “Flexible Endoscopic Surgery Robot, K-FLEX”
   - The Korean Federation of Mechanical Engineering Societies
   url: ''
-- date: 2018. 11
+- date: "2018. 11. 00"
   title: Best Paper Award
   details:
   - “A flexible endoscopic surgery robot K-FLEX and its feasibility validation in in-vivo animal trial”
   - The 14th Asian Conference on Computer Aided Surgery (ACCAS)
   url: ''
-- date: 2018. 6
+- date: "2018. 06. 00"
   title: Best Application Award and Overall Winner
   selected: true
   home_rank: 5
@@ -80,13 +80,13 @@
   - “Flexible Endoscopic Surgery Robot, K-FLEX”
   - Surgical Robot Challenge 2018, Hamlyn Symposium on Medical Robotics
   url: ''
-- date: 2015. 6
+- date: "2015. 06. 00"
   title: ISCAS Olympus Best Paper Award
   details:
   - '“A steerable endoscopic robot for endonasal skull base surgery: development and a cadaver experiment”'
   - 19th Annual Conference of the International Society of Computer Aided Surgery
   url: ''
-- date: 2013. 9
+- date: "2013. 09. 00"
   title: Finalist for the Best Paper Award
   details:
   - “A Flexible Endoscopic Surgery Robot for NOTES and its In-vivo Animal Experiment”

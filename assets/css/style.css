@@ -86,6 +86,21 @@ a:focus {
   color: var(--muted);
 }
 
+.affiliation-link,
+.affiliation-link:visited {
+  color: #1558b0;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #aac5e8;
+  text-decoration-thickness: 1px;
+}
+
+.affiliation-link:hover,
+.affiliation-link:focus {
+  color: var(--hover);
+  text-decoration-color: var(--hover);
+}
+
 nav {
   margin-top: 16px;
   display: flex;

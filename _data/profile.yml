@@ -1,18 +1,20 @@
-last_updated: September 5, 2026
+last_updated: "2026. 09. 05"
 name: MINHO HWANG
 display_name: Minho Hwang
 title: Associate Professor
 department: Department of Robotics and Mechatronics Engineering
+department_url: https://www.dgist.ac.kr/robot/
 institution: Daegu Gyeongbuk Institute of Science and Technology (DGIST)
 short_institution: DGIST
+institution_url: https://www.dgist.ac.kr/
+surglab_url: https://sites.google.com/view/surglab
 address: 333, Techno jungang-daero, Hyeonpung-eup, Dalseong-gun, Daegu, Republic of Korea
 emails:
 - minho@dgist.ac.kr
 - gkgk1215@gmail.com
 website: https://sites.google.com/view/surglab
 photo: /assets/img/profile_home.JPG
-about: >
-  I am an Associate Professor at DGIST and director of SURGLAB.
+about_research: >
   My research focuses on surgical robotics and precision robot manipulation,
   with particular interests in physical AI, visual intelligence, and shared autonomy.
 about_goal: >
