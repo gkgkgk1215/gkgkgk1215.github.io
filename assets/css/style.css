@@ -3,7 +3,7 @@
 .page{width:min(calc(100% - 40px),var(--w));margin:auto;padding:52px 0 40px}
 header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:32px}
 h1{font-size:2rem;margin:0 0 5px;letter-spacing:-.02em} h2{font-size:1.02rem;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--line);padding-bottom:6px;margin:0 0 12px}
-p{margin:0 0 12px} section{margin-bottom:32px} a{color:var(--link);text-underline-offset:2px}
+p{margin:0 0 12px} section{margin-bottom:32px} a{color:var(--link);text-underline-offset:2px;transition:color .12s ease} a:visited{color:var(--link)} a:hover,a:focus{color:#c62828}
 .muted,.meta{color:var(--muted)} nav{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap}
 .profile-top{display:flex;justify-content:space-between;gap:28px;align-items:flex-start}.profile-photo{width:118px;height:118px;object-fit:cover;border-radius:2px}
 .list{list-style:none;padding:0;margin:0}.list li{margin-bottom:9px}.date{display:inline-block;min-width:98px;color:var(--muted)}
