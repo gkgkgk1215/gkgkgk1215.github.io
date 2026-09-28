@@ -97,7 +97,7 @@ permalink: /cv/
     {% for x in talks %}
       <div class="cv-entry">
         <div class="date">{{ x.date }}</div>
-        <div>{% if x.url and x.url != "" %}<a href="{{ x.url }}"><strong>“{{ x.title }}”</strong></a>{% else %}<strong>“{{ x.title }}”</strong>{% endif %}, {{ x.venue }}</div>
+        <div>{% if x.url and x.url != "" %}<a href="{{ x.url }}">“{{ x.title }}”</a>{% else %}“{{ x.title }}”{% endif %}, {{ x.venue }}</div>
       </div>
     {% endfor %}
   </section>
