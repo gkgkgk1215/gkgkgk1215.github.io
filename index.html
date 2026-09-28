@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>{{ p.display_name }}</title>
   <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
 </head>
 <body>
 <main class="page">
@@ -81,14 +81,16 @@
 
   <section id="education">
     <h2>Education</h2>
-    <ul class="list">
+    <ul class="list dated-list">
       {% for x in edu %}
-        <li>
+        <li class="dated-entry">
           <span class="date">{{ x.date }}</span>
-          <strong>{{ x.degree }}</strong>, {{ x.institution }}
-          {% if x.thesis and x.thesis != "" %}
-            <div class="detail">Thesis: {{ x.thesis }}</div>
-          {% endif %}
+          <div class="entry-body">
+            <div><strong>{{ x.degree }}</strong>, {{ x.institution }}</div>
+            {% if x.thesis and x.thesis != "" %}
+              <div class="detail">Thesis: {{ x.thesis }}</div>
+            {% endif %}
+          </div>
         </li>
       {% endfor %}
     </ul>
@@ -132,16 +134,20 @@
 
   <section id="selected-awards">
     <h2>Selected Honors &amp; Awards</h2>
-    <ul class="list">
+    <ul class="list dated-list">
       {% for x in selected_awards %}
-        <li>
+        <li class="dated-entry">
           <span class="date">{{ x.date }}</span>
-          {% if x.url and x.url != "" %}
-            <a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>
-          {% else %}
-            <strong>{{ x.title }}</strong>
-          {% endif %}
-          <div class="detail">{{ x.home_detail }}</div>
+          <div class="entry-body">
+            <div>
+              {% if x.url and x.url != "" %}
+                <a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>
+              {% else %}
+                <strong>{{ x.title }}</strong>
+              {% endif %}
+            </div>
+            <div class="detail">{{ x.home_detail }}</div>
+          </div>
         </li>
       {% endfor %}
     </ul>

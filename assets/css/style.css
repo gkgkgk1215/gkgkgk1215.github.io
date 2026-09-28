@@ -165,8 +165,26 @@ nav {
   margin-top: 2px;
 }
 
-.list li > .detail {
-  margin-left: 112px;
+.dated-list .dated-entry {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  column-gap: 16px;
+  align-items: start;
+  margin-bottom: 14px;
+}
+
+.dated-list .date {
+  display: block;
+  min-width: 0;
+}
+
+.entry-body {
+  min-width: 0;
+}
+
+.entry-body .detail {
+  margin-left: 0;
+  margin-top: 3px;
 }
 
 .citation-list {
@@ -272,8 +290,12 @@ footer {
     min-width: 96px;
   }
 
-  .list li > .detail {
-    margin-left: 0;
+  .dated-list .dated-entry {
+    display: block;
+  }
+
+  .dated-list .date {
+    margin-bottom: 2px;
   }
 
   .teaching-courses {
