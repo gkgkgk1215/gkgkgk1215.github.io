@@ -167,8 +167,8 @@ nav {
 
 .dated-list .dated-entry {
   display: grid;
-  grid-template-columns: 130px minmax(0, 1fr);
-  column-gap: 16px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  column-gap: 4px;
   align-items: start;
   margin-bottom: 14px;
 }
@@ -202,8 +202,7 @@ nav {
 }
 
 .teaching-courses {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
 }
 
 .course-line {

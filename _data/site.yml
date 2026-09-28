@@ -1,81 +1,81 @@
 news:
-  - date: "2026.09.00"
+  - date: "2026-09-01"
     text: Promoted to Associate Professor at DGIST.
     url: /cv/#affiliations
-  - date: "2026.07.00"
+  - date: "2026-07-03"
     text: Excellence Award (2nd Overall), 2026 Humanoid Challenge — Ministry of Trade, Industry and Energy Award.
     url: /cv/#awards
-  - date: "2026.06.00"
+  - date: "2026-06-04"
     text: 1st Place, Autonomous AI, Real dVRK Track, AI for Robotic Surgery Competition at ICRA 2026.
     url: /cv/#awards
-  - date: "2026.06.00"
+  - date: "2026-06-04"
     text: 2nd Place, Human Teleoperation, Sim dVRK Track, AI for Robotic Surgery Competition at ICRA 2026.
     url: /cv/#awards
-  - date: "2026.06.00"
+  - date: "2026-06-26"
     text: Invited Special Lecture at the 13th Mini-MD Workshop, Korean Society of Medical Robotics.
     url: /cv/#talks
-  - date: "2026.04.00"
+  - date: "2026-04-10"
     text: Excellence Award, Humanoid Real-World Challenge, for an RB-Y1-based humanoid laparoscopic surgical system.
     url: /cv/#awards
 
 teaching:
-  - term: Fall 2026
+  - term: 2026 Fall
     institution: DGIST
     courses:
       - name: Intelligent Robot Manipulation
         code: ''
-  - term: Spring 2026
+  - term: 2026 Spring
     institution: DGIST
     courses:
       - name: Robot Dynamics and Control
         code: MECH401
-  - term: Fall 2025
+  - term: 2025 Fall
     institution: DGIST
     courses:
       - name: Robot System Implementation
         code: RT750
-  - term: Spring 2025
+  - term: 2025 Spring
     institution: DGIST
     courses:
       - name: Engineering Vibration
         code: MECH306
       - name: Introduction to AI/ML Engineering
         code: AT501
-  - term: Fall 2024
+  - term: 2024 Fall
     institution: DGIST
     courses:
       - name: Robot System Implementation
         code: RT750
       - name: Introduction to Biomedical Engineering
         code: MECH205
-  - term: Spring 2024
+  - term: 2024 Spring
     institution: DGIST
     courses:
       - name: Robot Dynamics and Control
         code: MECH401
-  - term: Fall 2023
+  - term: 2023 Fall
     institution: DGIST
     courses:
       - name: Kinematics
         code: MECH303
-  - term: Spring 2023
+  - term: 2023 Spring
     institution: DGIST
     courses:
       - name: Engineering Vibration
         code: MECH306
-  - term: Fall 2022
+  - term: 2022 Fall
     institution: DGIST
     courses:
       - name: Robot System Implementation
         code: RT750
       - name: Introduction to Biomedical Engineering
         code: MECH302
-  - term: Spring 2022
+  - term: 2022 Spring
     institution: DGIST
     courses:
       - name: Robot Dynamics and Control
         code: MECH401
-  - term: Fall 2021
+  - term: 2021 Fall
     institution: DGIST
     courses:
       - name: Robot System Implementation

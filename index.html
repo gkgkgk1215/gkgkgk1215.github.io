@@ -98,15 +98,17 @@
 
   <section id="news">
     <h2>News &amp; Highlights</h2>
-    <ul class="list">
+    <ul class="list dated-list">
       {% for x in h.news %}
-        <li>
+        <li class="dated-entry">
           <span class="date">{{ x.date }}</span>
-          {% if x.url and x.url != "" %}
-            <a href="{{ x.url }}">{{ x.text }}</a>
-          {% else %}
-            {{ x.text }}
-          {% endif %}
+          <div class="entry-body">
+            {% if x.url and x.url != "" %}
+              <a href="{{ x.url }}">{{ x.text }}</a>
+            {% else %}
+              {{ x.text }}
+            {% endif %}
+          </div>
         </li>
       {% endfor %}
     </ul>
@@ -157,17 +159,17 @@
   {% if h.teaching and h.teaching != empty %}
     <section id="teaching">
       <h2>Teaching</h2>
-      <ul class="list">
+      <ul class="list dated-list">
         {% for x in h.teaching %}
-          <li>
+          <li class="dated-entry">
             <span class="date">{{ x.term }}</span>
-            <span class="teaching-courses">
+            <div class="entry-body teaching-courses">
               {% for c in x.courses %}
                 <span class="course-line">
                   {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}, {{ x.institution }}
                 </span>
               {% endfor %}
-            </span>
+            </div>
           </li>
         {% endfor %}
       </ul>
@@ -175,7 +177,7 @@
   {% endif %}
 
   <footer>
-    CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y.%m.%d" }}
+    CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y-%m-%d" }}
   </footer>
 </main>
 </body>
