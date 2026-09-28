@@ -5,6 +5,12 @@
 {% assign edu = site.data.education %}
 {% assign awards = site.data.awards %}
 {% assign pubs = site.data.publications %}
+
+{% assign selected_journal = pubs.journal | where: "selected", true %}
+{% assign selected_conference = pubs.conference | where: "selected", true %}
+{% assign selected_pubs = selected_journal | concat: selected_conference | sort: "home_rank" %}
+{% assign selected_awards = awards | where: "selected", true | sort: "home_rank" %}
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,70 +30,136 @@
         <div>{{ p.department }}</div>
         <div>{{ p.short_institution }}</div>
       </div>
-      {% if p.photo and p.photo != "" %}<img class="profile-photo" src="{{ p.photo }}?v={{ site.time | date: '%s' }}" alt="{{ p.display_name }}">{% endif %}
+
+      {% if p.photo and p.photo != "" %}
+        <img
+          class="profile-photo"
+          src="{{ p.photo }}?v={{ site.time | date: '%s' }}"
+          alt="{{ p.display_name }}"
+        >
+      {% endif %}
     </div>
+
     <nav>
-      <a href="/">Home</a>
       <a href="/cv/">CV</a>
-      {% for link in p.links %}{% if link.url and link.url != "" %}<a href="{{ link.url }}">{{ link.label }}</a>{% endif %}{% endfor %}
-      {% for email in p.emails %}<a href="mailto:{{ email }}">Email</a>{% break %}{% endfor %}
+      {% for link in p.links %}
+        {% if link.url and link.url != "" %}
+          <a href="{{ link.url }}">{{ link.label }}</a>
+        {% endif %}
+      {% endfor %}
+      {% for email in p.emails %}
+        <a href="mailto:{{ email }}">Email</a>
+        {% break %}
+      {% endfor %}
     </nav>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About</h2>
     <p>{{ p.about }}</p>
+    <p>{{ p.about_goal }}</p>
   </section>
 
-  <section>
+  <section id="research">
     <h2>Research</h2>
     <ul class="plain-list">
-      {% for x in p.research_themes %}<li>{{ x }}</li>{% endfor %}
-    </ul>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <ul class="list">
-      {% for x in edu %}
-      <li><span class="date">{{ x.date }}</span><strong>{{ x.degree }}</strong>, {{ x.institution }}{% if x.thesis and x.thesis != "" %}<div class="detail">Thesis: {{ x.thesis }}</div>{% endif %}</li>
+      {% for x in p.research_themes %}
+        <li>{{ x }}</li>
       {% endfor %}
     </ul>
   </section>
 
-  <section>
-    <h2>Recent Publications</h2>
-    <h3>International Journal</h3>
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="list">
+      {% for x in edu %}
+        <li>
+          <span class="date">{{ x.date }}</span>
+          <strong>{{ x.degree }}</strong>, {{ x.institution }}
+          {% if x.thesis and x.thesis != "" %}
+            <div class="detail">Thesis: {{ x.thesis }}</div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="news">
+    <h2>News &amp; Highlights</h2>
+    <ul class="list">
+      {% for x in h.news %}
+        <li>
+          <span class="date">{{ x.date }}</span>
+          {% if x.url and x.url != "" %}
+            <a href="{{ x.url }}">{{ x.text }}</a>
+          {% else %}
+            {{ x.text }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="selected-publications">
+    <h2>Selected Publications</h2>
     <ol class="citation-list compact">
-      {% for x in pubs.journal limit:3 %}<li>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.citation }}</a>{% else %}{{ x.citation }}{% endif %}</li>{% endfor %}
-    </ol>
-    <h3>International Conference</h3>
-    <ol class="citation-list compact">
-      {% for x in pubs.conference limit:3 %}<li>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.citation }}</a>{% else %}{{ x.citation }}{% endif %}</li>{% endfor %}
+      {% for x in selected_pubs %}
+        <li>
+          {% if x.url and x.url != "" %}
+            <a href="{{ x.url }}"><strong>{{ x.home_title }}</strong></a>
+          {% else %}
+            <strong>{{ x.home_title }}</strong>
+          {% endif %}
+          <br>
+          {{ x.home_authors }}
+          <br>
+          <em>{{ x.home_venue }}</em>
+        </li>
+      {% endfor %}
     </ol>
     <p><a href="/cv/#publications">Full publication list →</a></p>
   </section>
 
-  <section>
-    <h2>Honors &amp; Awards</h2>
+  <section id="selected-awards">
+    <h2>Selected Honors &amp; Awards</h2>
     <ul class="list">
-      {% for x in awards limit:6 %}
-      <li><span class="date">{{ x.date }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>{% else %}<strong>{{ x.title }}</strong>{% endif %}{% if x.details and x.details != empty %}<span class="detail"> — {{ x.details | first }}</span>{% endif %}</li>
+      {% for x in selected_awards %}
+        <li>
+          <span class="date">{{ x.date }}</span>
+          {% if x.url and x.url != "" %}
+            <a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>
+          {% else %}
+            <strong>{{ x.title }}</strong>
+          {% endif %}
+          <div class="detail">{{ x.home_detail }}</div>
+        </li>
       {% endfor %}
     </ul>
     <p><a href="/cv/#awards">All honors &amp; awards →</a></p>
   </section>
 
   {% if h.teaching and h.teaching != empty %}
-  <section>
-    <h2>Teaching</h2>
-    <ul class="list">
-      {% for x in h.teaching %}<li><span class="date">{{ x.term }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.course }}</a>{% else %}{{ x.course }}{% endif %}, {{ x.institution }}</li>{% endfor %}
-    </ul>
-  </section>
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul class="list">
+        {% for x in h.teaching %}
+          <li>
+            <span class="date">{{ x.term }}</span>
+            {% if x.url and x.url != "" %}
+              <a href="{{ x.url }}">{{ x.course }}</a>
+            {% else %}
+              {{ x.course }}
+            {% endif %}
+            , {{ x.institution }}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
-  <footer>CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y-%m-%d" }}</footer>
+  <footer>
+    CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y-%m-%d" }}
+  </footer>
 </main>
 </body>
 </html>

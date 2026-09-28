@@ -2,6 +2,11 @@ journal:
 - number: 1
   citation: Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators J. Park, C. An, M. Park, I. Ullah, S. Park, and M. Hwang IEEE Transactions on Robotics (T-RO), 2026 (submitted)
   url: ''
+  selected: true
+  home_rank: 2
+  home_title: Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators
+  home_authors: J. Park, C. An, M. Park, I. Ullah, S. Park, and M. Hwang
+  home_venue: IEEE Transactions on Robotics, 2026 (submitted)
 - number: 2
   citation: 'SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm J. Park, S. Jang, M. Park, H. Park, J. Yoon, and M. Hwang The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 20, No. 6, e70014, Nov. 2024'
   url: ''
@@ -11,6 +16,11 @@ journal:
 - number: 4
   citation: Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network J. Park, S. Jang, H. Park, S. Bae, and M. Hwang IEEE Robotics and Automation Letters (RA-L), Vol. 9, No. 7, pp. 6091-6098, May 2024
   url: ''
+  selected: true
+  home_rank: 3
+  home_title: Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network
+  home_authors: J. Park, S. Jang, H. Park, S. Bae, and M. Hwang
+  home_venue: IEEE Robotics and Automation Letters, 2024
 - number: 5
   citation: Asymmetric Rolling Contact Joint for Enhanced Payload Capabilities J. Ahn, M. Hwang, D. Kong, J. Kim, and D. S. Kwon IEEE/ASME Transactions on Mechatronics, Vol. 29, No.1, pp.202-213, Feb. 2024
   url: ''
@@ -20,6 +30,11 @@ journal:
 - number: 7
   citation: 'Automating Surgical Peg Transfer: Calibration with Deep Learning Can Exceed Speed, Accuracy, and Consistency of Humans M. Hwang, J. Ichnowski, B. Thananjeyan, D. Seita, S. Paradis, D. Fer, T. Low, and K. Goldberg IEEE Transactions on Automation Science and Engineering (T-ASE), Vol. 20, No. 2, pp. 909-922, April 2023'
   url: ''
+  selected: true
+  home_rank: 4
+  home_title: 'Automating Surgical Peg Transfer: Calibration with Deep Learning Can Exceed Speed, Accuracy, and Consistency of Humans'
+  home_authors: M. Hwang, J. Ichnowski, B. Thananjeyan, D. Seita, S. Paradis, D. Fer, T. Low, and K. Goldberg
+  home_venue: IEEE Transactions on Automation Science and Engineering, 2023
 - number: 8
   citation: Bed-mounted laparoscopic surgical robot system with novel positioning arm mechanism D. G. Chung, M. Hwang, B. Cheon, D. Kong, D. H. Kang, D. H. Lee, C. K. Kim, D. Kim, J. M. Han, Y. G. Kim, D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 18, No. 4, e2402, April 5, 2022
   url: ''
@@ -38,6 +53,11 @@ journal:
 - number: 13
   citation: 'K-FLEX: A flexible robotic platform for scar-free endoscopic surgery M. Hwang and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 16, No. 2, e2078, April 2020'
   url: ''
+  selected: true
+  home_rank: 5
+  home_title: 'K-FLEX: A Flexible Robotic Platform for Scar-Free Endoscopic Surgery'
+  home_authors: M. Hwang and D. S. Kwon
+  home_venue: The International Journal of Medical Robotics and Computer Assisted Surgery, 2020
 - number: 14
   citation: Evaluation of a robotic arm assisted endoscope to facilitate endoscopic submucosal dissection (with video) M. Hwang, S. W. Lee, K. C. Park, H. J. Sul, and D. S. Kwon Gastrointestinal Endoscopy, Vol. 91, No. 3, pp. 699-706, March 2020
   url: ''
@@ -60,6 +80,11 @@ conference:
 - number: 1
   citation: Learning Optimal Strategies for Needle Handover in Surgical Suturing C. Kim, J. Yoon, S. Park, H. Park, S. Lee, and M. Hwang IEEE International Conference on Robotics and Automation (ICRA), June 1–5, 2026
   url: ''
+  selected: true
+  home_rank: 1
+  home_title: Learning Optimal Strategies for Needle Handover in Surgical Suturing
+  home_authors: C. Kim, J. Yoon, S. Park, H. Park, S. Lee, and M. Hwang
+  home_venue: IEEE International Conference on Robotics and Automation (ICRA), 2026
 - number: 2
   citation: Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency M. Park, C. An, J. Park, J. Kang, and M. Hwang IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October 19-25, 2025
   url: ''

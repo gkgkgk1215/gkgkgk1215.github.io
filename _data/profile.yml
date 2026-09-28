@@ -11,7 +11,13 @@ emails:
 - gkgk1215@gmail.com
 website: https://sites.google.com/view/surglab
 photo: /assets/img/profile_home.JPG
-about: I am an Associate Professor at DGIST. My research spans AI-assisted surgical robotics, autonomous precision manipulation, continuum and flexible robots, visual intelligence and shared autonomy, and learning-based robot control for contact-rich manipulation.
+about: >
+  I am an Associate Professor at DGIST and director of SURGLAB.
+  My research focuses on surgical robotics and precision robot manipulation,
+  with particular interests in physical AI, visual intelligence, and shared autonomy.
+about_goal: >
+  Our goal is to develop robotic systems that can interact safely and precisely
+  with humans and complex physical environments.
 research_themes:
 - AI-Assisted Surgical Robotics
 - Autonomous Precision Manipulation
@@ -21,7 +27,7 @@ research_themes:
 links:
 - label: SURGLAB
   url: https://sites.google.com/view/surglab
+- label: Google Scholar
+  url: "https://scholar.google.com/citations?user=_RAeAjoAAAAJ&hl=ko"
 - label: GitHub
   url: https://github.com/gkgkgk1215
-- label: Google Scholar
-  url: ''

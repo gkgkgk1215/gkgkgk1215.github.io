@@ -1,5 +1,8 @@
 - date: 2026. 7
   title: Excellence Award (2nd Overall)
+  selected: true
+  home_rank: 1
+  home_detail: 2026 Humanoid Challenge · Ministry of Trade, Industry and Energy Award
   details:
   - “2026 Humanoid Challenge”
   - Ministry of Trade, Industry and Energy Award
@@ -7,6 +10,9 @@
   url: ''
 - date: 2026. 6
   title: 1st Place Award
+  selected: true
+  home_rank: 2
+  home_detail: Autonomous AI, Real dVRK Track · AI for Robotic Surgery Competition, ICRA 2026
   details:
   - “Autonomous AI, Real dVRK Track”
   - AI for Robotic Surgery Competition, IEEE International Conference on Robotics and Automation (ICRA 2026)
@@ -19,6 +25,9 @@
   url: ''
 - date: 2026. 4.
   title: Excellence Award
+  selected: true
+  home_rank: 3
+  home_detail: RB-Y1-based Humanoid Laparoscopic Surgical System · Humanoid Real-World Challenge
   details:
   - “Demonstration of an RB-Y1-based Humanoid Laparoscopic Surgical System”
   - Humanoid Real-World Challenge
@@ -49,6 +58,9 @@
   url: ''
 - date: 2019. 11
   title: Top 10 Mechanical Engineering Technology of 2019
+  selected: true
+  home_rank: 4
+  home_detail: Flexible Endoscopic Surgery Robot, K-FLEX · Korean Federation of Mechanical Engineering Societies
   details:
   - “Flexible Endoscopic Surgery Robot, K-FLEX”
   - The Korean Federation of Mechanical Engineering Societies
@@ -61,6 +73,9 @@
   url: ''
 - date: 2018. 6
   title: Best Application Award and Overall Winner
+  selected: true
+  home_rank: 5
+  home_detail: Flexible Endoscopic Surgery Robot, K-FLEX · Surgical Robot Challenge 2018
   details:
   - “Flexible Endoscopic Surgery Robot, K-FLEX”
   - Surgical Robot Challenge 2018, Hamlyn Symposium on Medical Robotics
