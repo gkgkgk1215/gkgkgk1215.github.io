@@ -24,7 +24,7 @@
         <div>{{ p.department }}</div>
         <div>{{ p.short_institution }}</div>
       </div>
-      {% if p.photo and p.photo != "" %}<img class="profile-photo" src="{{ p.photo }}" alt="{{ p.display_name }}">{% endif %}
+      {% if p.photo and p.photo != "" %}<img class="profile-photo" src="{{ p.photo }}?v={{ site.time | date: '%s' }}" alt="{{ p.display_name }}">{% endif %}
     </div>
     <nav>
       <a href="/">Home</a>
