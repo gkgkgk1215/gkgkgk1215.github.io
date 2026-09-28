@@ -43,7 +43,7 @@ permalink: /cv/
     <h2>Education</h2>
     {% for x in edu %}
       <div class="cv-entry">
-        <div class="date">{{ x.date }}</div>
+        <div class="date">{% if x.date and x.date != "" %}{{ x.date }}{% else %}—{% endif %}</div>
         <div>
           <strong>{{ x.degree }}</strong><br>
           {% if x.url and x.url != "" %}
