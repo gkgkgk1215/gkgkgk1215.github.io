@@ -1,0 +1,27 @@
+last_updated: September 5, 2026
+name: MINHO HWANG
+display_name: Minho Hwang
+title: Associate Professor
+department: Department of Robotics and Mechatronics Engineering
+institution: Daegu Gyeongbuk Institute of Science and Technology (DGIST)
+short_institution: DGIST
+address: 333, Techno jungang-daero, Hyeonpung-eup, Dalseong-gun, Daegu, Republic of Korea
+emails:
+- minho@dgist.ac.kr
+- gkgk1215@gmail.com
+website: https://sites.google.com/view/surglab
+photo: /assets/img/profile.JPG
+about: I am an Associate Professor at DGIST. My research spans AI-assisted surgical robotics, autonomous precision manipulation, continuum and flexible robots, visual intelligence and shared autonomy, and learning-based robot control for contact-rich manipulation.
+research_themes:
+- AI-Assisted Surgical Robotics
+- Autonomous Precision Manipulation
+- Continuum and Flexible Robots
+- Visual Intelligence and Shared Autonomy
+- Learning-based Robot Control for Contact-rich Manipulation
+links:
+- label: SURGLAB
+  url: https://sites.google.com/view/surglab
+- label: GitHub
+  url: https://github.com/gkgkgk1215
+- label: Google Scholar
+  url: ''

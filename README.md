@@ -1,28 +1,37 @@
 # Minho Hwang — Academic Website
 
-Personal academic website powered by GitHub Pages + Jekyll.
+Personal academic website powered by GitHub Pages + Jekyll. The homepage and printable CV share the same data files.
 
-## Routine editing
+## Main data files
 
-For most updates, edit only:
+- `_data/profile.yml` — name, contact, photo, website links, research themes
+- `_data/education.yml` — education and theses
+- `_data/experience.yml` — professional affiliations
+- `_data/awards.yml` — honors and awards
+- `_data/service.yml` — professional service
+- `_data/talks.yml` — invited talks
+- `_data/publications.yml` — journal and conference publications
+- `_data/patents.yml` — patents
+- `_data/site.yml` — homepage-only extras such as news and teaching
 
-`_data/site.yml`
+## Profile photo
 
-It contains profile, experience, education, awards, teaching, news, publications, talks, students, and grants.
+The homepage reads the path in `_data/profile.yml`:
 
-The homepage and CV both read from this same file.
+`photo: /assets/img/profile.JPG`
 
-## CV
+The actual image file must exist at `assets/img/profile.JPG`.
 
-Open:
+## Hyperlinks
 
-https://gkgkgk1215.github.io/cv/
+Most records have an optional `url` field. Leave it blank to render plain text, or paste a URL to make the item clickable. Links change color on hover.
 
-Then use **Print → Save as PDF**.
+## CV / PDF
 
-## GitHub Pages settings
+Open `https://gkgkgk1215.github.io/cv/` and use **Print → Save as PDF**. The print stylesheet is formatted for A4.
 
+## GitHub Pages
+
+Publishing source:
 - Branch: `master`
 - Folder: `/(root)`
-
-A custom domain can be connected later.

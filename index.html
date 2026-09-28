@@ -1,12 +1,16 @@
 ---
 ---
-{% assign d = site.data.site %}
+{% assign p = site.data.profile %}
+{% assign h = site.data.site %}
+{% assign edu = site.data.education %}
+{% assign awards = site.data.awards %}
+{% assign pubs = site.data.publications %}
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{ d.profile.name }}</title>
+  <title>{{ p.display_name }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -15,73 +19,75 @@
   <header>
     <div class="profile-top">
       <div>
-        <h1>{{ d.profile.name }}</h1>
-        <div>{{ d.profile.title }}, {{ d.profile.institution }}</div>
-        <div class="muted">{{ d.profile.tagline }}</div>
+        <h1>{{ p.display_name }}</h1>
+        <div>{{ p.title }}</div>
+        <div>{{ p.department }}</div>
+        <div>{{ p.short_institution }}</div>
       </div>
-      {% if d.profile.photo and d.profile.photo != "" %}
-        <img class="profile-photo" src="{{ d.profile.photo }}" alt="{{ d.profile.name }}">
-      {% endif %}
+      {% if p.photo and p.photo != "" %}<img class="profile-photo" src="{{ p.photo }}" alt="{{ p.display_name }}">{% endif %}
     </div>
     <nav>
       <a href="/">Home</a>
       <a href="/cv/">CV</a>
-      {% for link in d.profile.links %}
-        {% if link.url and link.url != "" %}<a href="{{ link.url }}">{{ link.label }}</a>{% endif %}
-      {% endfor %}
+      {% for link in p.links %}{% if link.url and link.url != "" %}<a href="{{ link.url }}">{{ link.label }}</a>{% endif %}{% endfor %}
+      {% for email in p.emails %}<a href="mailto:{{ email }}">Email</a>{% break %}{% endfor %}
     </nav>
   </header>
 
   <section>
     <h2>About</h2>
-    <p>{{ d.profile.about }}</p>
-    <p class="meta">{{ d.profile.department }}<br>{{ d.profile.institution }} · {{ d.profile.location }}</p>
+    <p>{{ p.about }}</p>
   </section>
 
   <section>
     <h2>Research</h2>
-    <ul class="inline">{% for x in d.profile.research_interests %}<li>{{ x }}</li>{% endfor %}</ul>
+    <ul class="plain-list">
+      {% for x in p.research_themes %}<li>{{ x }}</li>{% endfor %}
+    </ul>
   </section>
 
-  {% if d.news and d.news != empty %}
-  <section><h2>News</h2><ul class="list">
-    {% for x in d.news limit:8 %}
-    <li><span class="date">{{ x.date }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.text }}</a>{% else %}{{ x.text }}{% endif %}</li>
-    {% endfor %}
-  </ul></section>
+  <section>
+    <h2>Education</h2>
+    <ul class="list">
+      {% for x in edu %}
+      <li><span class="date">{{ x.date }}</span><strong>{{ x.degree }}</strong>, {{ x.institution }}{% if x.thesis and x.thesis != "" %}<div class="detail">Thesis: {{ x.thesis }}</div>{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Recent Publications</h2>
+    <h3>International Journal</h3>
+    <ol class="citation-list compact">
+      {% for x in pubs.journal limit:3 %}<li>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.citation }}</a>{% else %}{{ x.citation }}{% endif %}</li>{% endfor %}
+    </ol>
+    <h3>International Conference</h3>
+    <ol class="citation-list compact">
+      {% for x in pubs.conference limit:3 %}<li>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.citation }}</a>{% else %}{{ x.citation }}{% endif %}</li>{% endfor %}
+    </ol>
+    <p><a href="/cv/#publications">Full publication list →</a></p>
+  </section>
+
+  <section>
+    <h2>Honors &amp; Awards</h2>
+    <ul class="list">
+      {% for x in awards limit:6 %}
+      <li><span class="date">{{ x.date }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>{% else %}<strong>{{ x.title }}</strong>{% endif %}{% if x.details and x.details != empty %}<span class="detail"> — {{ x.details | first }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    <p><a href="/cv/#awards">All honors &amp; awards →</a></p>
+  </section>
+
+  {% if h.teaching and h.teaching != empty %}
+  <section>
+    <h2>Teaching</h2>
+    <ul class="list">
+      {% for x in h.teaching %}<li><span class="date">{{ x.term }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.course }}</a>{% else %}{{ x.course }}{% endif %}, {{ x.institution }}</li>{% endfor %}
+    </ul>
+  </section>
   {% endif %}
 
-  {% assign selected = d.publications | where:"selected",true %}
-  {% if selected and selected != empty %}
-  <section><h2>Selected Publications</h2><ul class="list">
-    {% for x in selected %}
-    <li>
-      <span class="date">{{ x.year }}</span>{{ x.authors }}.
-      {% if x.url and x.url != "" %}<a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>{% else %}<strong>{{ x.title }}</strong>{% endif %}.
-      <em>{{ x.venue }}</em>.
-      <span class="pub-links">
-        {% if x.pdf and x.pdf != "" %}<a href="{{ x.pdf }}">[Paper]</a>{% endif %}
-        {% if x.video and x.video != "" %}<a href="{{ x.video }}">[Video]</a>{% endif %}
-        {% if x.code and x.code != "" %}<a href="{{ x.code }}">[Code]</a>{% endif %}
-      </span>
-    </li>
-    {% endfor %}
-  </ul></section>
-  {% endif %}
-
-  <section><h2>Honors &amp; Awards</h2><ul class="list">
-    {% for x in d.awards limit:6 %}
-    <li><span class="date">{{ x.year }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}{% if x.organization %}, {{ x.organization }}{% endif %}</li>
-    {% endfor %}
-  </ul></section>
-
-  <section><h2>Teaching</h2><ul class="list">
-    {% for x in d.teaching %}
-    <li><span class="date">{{ x.term }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.course }}</a>{% else %}{{ x.course }}{% endif %}, {{ x.institution }}</li>
-    {% endfor %}
-  </ul></section>
-
-  <footer>Last updated {{ site.time | date:"%Y-%m-%d" }}</footer>
+  <footer>CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y-%m-%d" }}</footer>
 </main>
 </body>
 </html>
