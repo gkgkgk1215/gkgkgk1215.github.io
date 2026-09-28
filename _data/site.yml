@@ -37,7 +37,7 @@ teaching:
   - term: Spring 2025
     institution: DGIST
     courses:
-      - name: Vibration Engineering
+      - name: Engineering Vibration
         code: MECH306
       - name: Introduction to AI/ML Engineering
         code: AT501
@@ -61,7 +61,7 @@ teaching:
   - term: Spring 2023
     institution: DGIST
     courses:
-      - name: Vibration Engineering
+      - name: Engineering Vibration
         code: MECH306
   - term: Fall 2022
     institution: DGIST

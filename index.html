@@ -155,9 +155,13 @@
         {% for x in h.teaching %}
           <li>
             <span class="date">{{ x.term }}</span>
-            {% for c in x.courses %}
-              {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}{% unless forloop.last %}; {% endunless %}
-            {% endfor %}, {{ x.institution }}
+            <span class="teaching-courses">
+              {% for c in x.courses %}
+                <span class="course-line">
+                  {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}{% if forloop.first %}, {{ x.institution }}{% endif %}
+                </span>
+              {% endfor %}
+            </span>
           </li>
         {% endfor %}
       </ul>
