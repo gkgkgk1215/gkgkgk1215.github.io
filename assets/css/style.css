@@ -250,13 +250,17 @@ footer {
 
 .cv-entry {
   display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  gap: 14px;
+  grid-template-columns: 145px minmax(0, 1fr);
+  gap: 12px;
   margin-bottom: 10px;
 }
 
 .cv-entry > .date {
   white-space: nowrap;
+}
+
+.period-date {
+  line-height: 1.45;
 }
 
 .award-entry {

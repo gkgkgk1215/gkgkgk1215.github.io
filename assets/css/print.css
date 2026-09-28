@@ -55,14 +55,18 @@ h3 {
 }
 
 .cv-entry {
-  grid-template-columns: 40mm 1fr;
-  gap: 3mm;
+  grid-template-columns: 32mm 1fr;
+  gap: 2.5mm;
   margin-bottom: 1.5mm;
   break-inside: avoid;
 }
 
 .cv-entry > .date {
   white-space: nowrap;
+}
+
+.period-date {
+  line-height: 1.25;
 }
 
 .citation-list {

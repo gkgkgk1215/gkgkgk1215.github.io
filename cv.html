@@ -56,8 +56,12 @@ permalink: /cv/
   <section id="affiliations">
     <h2>Professional Affiliations</h2>
     {% for x in exp %}
+      {% assign period_parts = x.period | split: " – " %}
       <div class="cv-entry">
-        <div class="date">{{ x.period }}</div>
+        <div class="date period-date">
+          <div>{{ period_parts[0] }}{% if period_parts.size > 1 %} –{% endif %}</div>
+          {% if period_parts.size > 1 %}<div>{{ period_parts[1] }}</div>{% endif %}
+        </div>
         <div>
           <strong>{{ x.organization }}</strong><br>
           {{ x.location }}<br>
