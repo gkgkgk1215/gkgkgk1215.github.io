@@ -110,7 +110,7 @@ permalink: /cv/
       {% for x in pubs.journal %}
         <li class="publication-entry">
           <div class="publication-title">{{ x.title }}</div>
-          <div class="publication-authors">{{ x.authors }}</div>
+          <div class="publication-authors">{{ x.authors | replace: "M. Hwang", "<strong>M. Hwang</strong>" }}</div>
           <div class="publication-meta">
             <em>{{ x.venue }}</em>
             <span class="pub-links">
@@ -127,7 +127,7 @@ permalink: /cv/
       {% for x in pubs.conference %}
         <li class="publication-entry">
           <div class="publication-title">{{ x.title }}</div>
-          <div class="publication-authors">{{ x.authors }}</div>
+          <div class="publication-authors">{{ x.authors | replace: "M. Hwang", "<strong>M. Hwang</strong>" }}</div>
           <div class="publication-meta">
             <em>{{ x.venue }}</em>
             <span class="pub-links">
@@ -149,7 +149,17 @@ permalink: /cv/
             {% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}
           </div>
           <div class="patent-authors">{{ x.authors }}</div>
-          <div class="patent-meta"><em>{{ x.details }}</em></div>
+          <div class="patent-meta">
+            <em>
+              {% if x.jurisdiction and x.jurisdiction != "" %}{{ x.jurisdiction }}{% endif %}
+              {% if x.pct and x.pct != "" %}{% if x.jurisdiction and x.jurisdiction != "" %} · {% endif %}{{ x.pct }}{% endif %}
+              {% if x.application and x.application != "" %}{% if x.jurisdiction and x.jurisdiction != "" %} · {% endif %}App. No. {{ x.application }}{% endif %}
+              {% if x.filed and x.filed != "" %} · Filed {{ x.filed }}{% endif %}
+            </em>
+          </div>
+          {% if x.patent and x.patent != "" %}
+            <div class="patent-meta patent-grant"><em>Pat. No. {{ x.patent }}{% if x.granted and x.granted != "" %} · Granted {{ x.granted }}{% endif %}</em></div>
+          {% endif %}
         </li>
       {% endfor %}
     </ol>

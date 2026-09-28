@@ -363,3 +363,11 @@ footer {
 .patent-meta {
   margin-top: 2px;
 }
+
+.patent-meta {
+  color: var(--muted);
+}
+
+.patent-grant {
+  margin-top: 0;
+}

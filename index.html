@@ -120,12 +120,12 @@
       {% for x in selected_pubs %}
         <li>
           {% if x.url and x.url != "" %}
-            <a href="{{ x.url }}"><strong>{{ x.home_title }}</strong></a>
+            <a href="{{ x.url }}">{{ x.home_title }}</a>
           {% else %}
-            <strong>{{ x.home_title }}</strong>
+            {{ x.home_title }}
           {% endif %}
           <br>
-          {{ x.home_authors }}
+          {{ x.home_authors | replace: "M. Hwang", "<strong>M. Hwang</strong>" }}
           <br>
           <em>{{ x.home_venue }}</em>
         </li>
