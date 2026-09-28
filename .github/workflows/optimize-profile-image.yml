@@ -34,8 +34,9 @@ jobs:
 
           with Image.open(path) as im:
               im = ImageOps.exif_transpose(im).convert("RGB")
+              im.thumbnail((2048, 2048), Image.Resampling.LANCZOS)
               tmp = path.with_suffix(".tmp.jpg")
-              im.save(tmp, "JPEG", quality=92, optimize=True, progressive=True)
+              im.save(tmp, "JPEG", quality=90, optimize=True, progressive=True)
               tmp.replace(path)
 
           after = path.stat().st_size
