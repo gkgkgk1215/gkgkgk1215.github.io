@@ -5,7 +5,7 @@ profile:
   institution: DGIST
   location: Daegu, Republic of Korea
   tagline: Surgical Robotics · Robot Manipulation · Physical AI
-  photo: ""   # after uploading, set to /assets/img/profile.jpg
+  photo: "/assets/img/profile.JPG"
   about: >
     I am an Associate Professor at DGIST and lead SURGLAB.
     My research focuses on surgical robotics, precision robot manipulation,
