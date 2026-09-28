@@ -76,7 +76,46 @@ conference:
   citation: Design and Kinematics Modeling of Flexible Continuum Manipulator for Endoscopic Surgery S. H. Jang, J. Park, and M. Hwang The 22nd International Conference on Control, Automation and Systems (ICCAS), Nov. 27-Dec. 1, 2022
   url: ''
 - number: 7
-  citation: Learning to Localize, Grasp, and Hand Over Unmodified Surgical Needles A. Wilcox, J. Kerr, B. Thananjeyan, J. Ichnowski, M. Hwang, S. Paradis, D. Fer, K. Goldberg IEEE International Conference on Robo²È="26istic tendon control H. Kim, J. Kim, M. Hwang, and D. S. Kwon 12th Hamlyn Symposium on Medical Robotics, Jun. 23-26, 2019
+  citation: Learning to Localize, Grasp, and Hand Over Unmodified Surgical Needles A. Wilcox, J. Kerr, B. Thananjeyan, J. Ichnowski, M. Hwang, S. Paradis, D. Fer, K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 23-27, 2022
+  url: ''
+- number: 8
+  citation: 'Untangling Dense Non-Planar Knots by Learning Manipulation Features and Recovery Policies P. Sundaresan, J. Grannen, B. Thananjeyan, A. Balakrishna, J. Ichnowski, E. Novoseller, M. Hwang, M. Laskey, J. E. Gonzalez, K. Goldberg Robotics: Science and Systems (RSS), July 12â€“16, 2021'
+  url: ''
+- number: 9
+  citation: 'Intermittent Visual Servoing: Efficiently Learning Policies Robust to Instrument Changes for High-precision Surgical Manipulation S. Paradis, M. Hwang, B. Thananjeyan, J. Ichnowski, D. Seita, D. Fer, T. Low, and K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 30, 2021'
+  url: ''
+- number: 10
+  citation: 'Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones B. Thananjeyan, A. Balakrishna, S. Nair, M. Luo, K. Srinivasan, M. Hwang, J. E. Gonzalez, J. Ibarz, C. Finn, and K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 30, 2021'
+  url: ''
+- number: 11
+  citation: Learning Dense Visual Correspondences in Simulation to Smooth and Fold Real Fabrics A. Ganapathi, P. Sundaresan, B. Thananjeyan, A. Balakrishna, D. Seita, J. Grannen, M. Hwang, R. Hoque, J. E. Gonzalez, N. Jamali, K. Yamane, S. Iba, and K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 30, 2021
+  url: ''
+- number: 12
+  citation: 'Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones B. Thananjeyan, A. Balakrishna, S. Nair, M. Luo, K. Srinivasan, M. Hwang, J. E. Gonzalez, J. Ibarz, C. Finn, and K. Goldberg Neural Information Processing Systems (NeurIPS) Workshop, Dec. 6, 2020'
+  url: ''
+- number: 13
+  citation: Payload optimization of surgical instruments with rolling joint mechanisms D. H. Lee, M. Hwang, J. Kim, and D. S. Kwon IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Oct. 25-Dec. 24, 2020
+  url: ''
+- number: 14
+  citation: Deep Imitation Learning of Sequential Fabric Smoothing Policies D. Seita, A. Ganapathi, R. Hoque, M. Hwang, E. Cen, A. K. Tanwani, A. Balakrishna, B. Thananjeyan, J. Ichnowski, N. Jamali, K. Yamane, S. Iba, J. Canny, and K. Goldberg IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Oct. 25-Dec. 24, 2020
+  url: ''
+- number: 15
+  citation: Efficiently Calibrating Cable-Driven Surgical Robots With RGBD Sensing, Temporal Windowing, and Linear and Recurrent Neural Network Compensation M. Hwang, B. Thananjeyan, S. Paradis, D. Seita, J. Ichnowski, D. Fer, T. Low, and K. Goldberg Workshop on Cognitive Robotic Surgery, IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Oct. 25-Dec. 24, 2020
+  url: ''
+- number: 16
+  citation: Applying Depth-Sensing to Automated Surgical Manipulation with a da Vinci Robot M. Hwang*, D. Seita*, B. Thananjeyan, J. Ichnowski, S. Paradis, D. Fer, T. Low, and K. Goldberg International Symposium on Medical Robotics (ISMR), Nov. 18-20, 2020
+  url: ''
+- number: 17
+  citation: Untangling Dense Knots by Learning Task-Relevant Keypoints J. Grannen, P. Sundaresan, B. Thananjeyan, J. Ichnowski, A. Balakrishna, M. Hwang, V. Viswanath, M. Laskey, J. E. Gonzalez, and K. Goldberg Conference on Robot Learning (CoRL), Nov. 16-18, 2020
+  url: ''
+- number: 18
+  citation: Ex-vivo suturing trials with a 5-DoF robot arm for flexible endoscopic surgery robot J. Kim, J. Ahn, M. Hwang, H. Kim, D. Baek, J. You, D. Lee, and D. S. Kwon The 15th Asian Conference on Computer Aided Surgery, Nov. 2019
+  url: ''
+- number: 19
+  citation: 'Effects of Flexible Surgery Robot on Endoscopic Procedure: Preliminary Bench-Top User Test J. Kim, M. Hwang, D. Lee, H. Kim, J. Ahn, J. You, D. Baek, and D. S. Kwon IEEE International Conference on Robot and Human Interactive Communication (Ro-Man), Oct. 14-18, 2019'
+  url: ''
+- number: 20
+  citation: Development of 5-DOFs Master-Slave system with intentional adjustment of hysteresis based on antagonistic tendon control H. Kim, J. Kim, M. Hwang, and D. S. Kwon 12th Hamlyn Symposium on Medical Robotics, Jun. 23-26, 2019
   url: ''
 - number: 21
   citation: A robotic surgical arm dockable on an endoscope to prevent organ injury during insertion D. H. Lee, M. Hwang, J. Kim, and D. S. Kwon The 33rd Computer Assisted Radiology and Surgery (CARS), June 18-21, 2019
