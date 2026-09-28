@@ -55,10 +55,14 @@ h3 {
 }
 
 .cv-entry {
-  grid-template-columns: 28mm 1fr;
+  grid-template-columns: 40mm 1fr;
   gap: 3mm;
   margin-bottom: 1.5mm;
   break-inside: avoid;
+}
+
+.cv-entry > .date {
+  white-space: nowrap;
 }
 
 .citation-list {
@@ -90,4 +94,27 @@ footer {
 
 .detail {
   color: #222;
+}
+
+.publication-list {
+  padding-left: 5.5mm;
+}
+
+.publication-entry {
+  margin-bottom: 1.8mm;
+  padding-left: 1mm;
+  break-inside: avoid;
+}
+
+.publication-title {
+  font-weight: 700;
+}
+
+.publication-authors,
+.publication-meta {
+  margin-top: 0.4mm;
+}
+
+.pub-links {
+  margin-left: 1.5mm;
 }

@@ -250,9 +250,13 @@ footer {
 
 .cv-entry {
   display: grid;
-  grid-template-columns: 118px 1fr;
-  gap: 12px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 14px;
   margin-bottom: 10px;
+}
+
+.cv-entry > .date {
+  white-space: nowrap;
 }
 
 .award-entry {
@@ -301,4 +305,35 @@ footer {
     display: block;
     margin-top: 2px;
   }
+}
+
+.publication-list {
+  margin: 0;
+  padding-left: 28px;
+}
+
+.publication-entry {
+  margin-bottom: 14px;
+  padding-left: 5px;
+}
+
+.publication-title {
+  font-weight: 700;
+}
+
+.publication-authors {
+  margin-top: 2px;
+}
+
+.publication-meta {
+  margin-top: 2px;
+}
+
+.pub-links {
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
+.pub-links a + a {
+  margin-left: 5px;
 }

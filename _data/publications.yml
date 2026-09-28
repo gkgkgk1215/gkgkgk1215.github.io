@@ -1,234 +1,261 @@
 journal:
 - number: 1
-  citation: Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators J. Park, C. An, M. Park, I. Ullah, S. Park, and M. Hwang IEEE Transactions on Robotics (T-RO), 2026 (submitted)
-  url: ''
-  selected: true
-  home_rank: 2
-  home_title: Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators
-  home_authors: J. Park, C. An, M. Park, I. Ullah, S. Park, and M. Hwang
-  home_venue: IEEE Transactions on Robotics, 2026 (submitted)
+  title: 'SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm'
+  authors: 'J. Park, S. Jang, M. Park, H. Park, J. Yoon, and M. Hwang'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 20, No. 6, e70014, 2024'
+  pub: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/rcs.70014'
+  pdf: 'https://drive.google.com/file/d/1oPCGcptVzPKhjvs4X0pjEOeWU3hoc2u-/view?usp=sharing'
 - number: 2
-  citation: 'SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm J. Park, S. Jang, M. Park, H. Park, J. Yoon, and M. Hwang The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 20, No. 6, e70014, Nov. 2024'
-  url: ''
+  title: 'Efficacy of robot arm-assisted endoscopic submucosal dissection in live porcine stomach (with video)'
+  authors: 'J. Kim, D. H. Lee, D. S. Kwon, K. Park, H. J. Sul, M. Hwang, and S. W. Lee'
+  venue: 'Scientific Reports, Vol. 14, Article 17367, 2024'
+  pub: 'https://www.nature.com/articles/s41598-024-63647-y'
+  pdf: 'https://drive.google.com/file/d/1QJ24_utP47bS3jJLxRdbUQUOqk7F6yHC/view?usp=sharing'
 - number: 3
-  citation: Efficacy of robot arm-assisted endoscopic submucosal dissection in live porcine stomach (with video) J. Kim, D. H. Lee, D. S. Kwon, K. Park, H. J. Sul, M. Hwang, and S. W. Lee Scientific Reports, Vol. 14, No. 17367, July 2024
-  url: ''
-- number: 4
-  citation: Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network J. Park, S. Jang, H. Park, S. Bae, and M. Hwang IEEE Robotics and Automation Letters (RA-L), Vol. 9, No. 7, pp. 6091-6098, May 2024
-  url: ''
+  title: 'Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network'
+  authors: 'J. Park, S. Jang, H. Park, S. Bae, and M. Hwang'
+  venue: 'IEEE Robotics and Automation Letters, Vol. 9, No. 7, pp. 6091–6098, 2024'
+  pub: 'https://ieeexplore.ieee.org/document/10522825'
+  pdf: 'https://drive.google.com/file/d/1QQGme_w80ZYjYNfBoF0dVJNJ1fPG80oK/view?usp=sharing'
   selected: true
   home_rank: 3
-  home_title: Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network
-  home_authors: J. Park, S. Jang, H. Park, S. Bae, and M. Hwang
-  home_venue: IEEE Robotics and Automation Letters, 2024
+  home_title: 'Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network'
+  home_authors: 'J. Park, S. Jang, H. Park, S. Bae, and M. Hwang'
+  home_venue: 'IEEE Robotics and Automation Letters, 2024'
+- number: 4
+  title: 'Asymmetric Rolling Contact Joint for Enhanced Payload Capabilities'
+  authors: 'J. Ahn, M. Hwang, D. Kong, J. Kim, and D. S. Kwon'
+  venue: 'IEEE/ASME Transactions on Mechatronics, Vol. 29, No. 1, pp. 202–213, 2024'
+  pub: 'https://ieeexplore.ieee.org/document/10189104'
+  pdf: 'https://drive.google.com/file/d/1RJ8NAzArafTivKLXdzkmZQGxPEiyrq2U/view?usp=sharing'
 - number: 5
-  citation: Asymmetric Rolling Contact Joint for Enhanced Payload Capabilities J. Ahn, M. Hwang, D. Kong, J. Kim, and D. S. Kwon IEEE/ASME Transactions on Mechatronics, Vol. 29, No.1, pp.202-213, Feb. 2024
-  url: ''
+  title: 'Sigmoidal Auxiliary Tendon-Driven Mechanism Reinforcing Structural Stiffness of Hyper-Redundant Manipulator for Endoscopic Surgery'
+  authors: 'H. Kim, J. M. You, M. Hwang, K. Kyung, and D. S. Kwon'
+  venue: 'Soft Robotics, Vol. 10, No. 2, pp. 234–245, 2023'
+  pub: 'https://www.liebertpub.com/doi/10.1089/soro.2021.0148'
+  pdf: 'https://drive.google.com/file/d/1CLu7r257qsyY17zvuK7TSdZOm3lu1PqM/view?usp=sharing'
 - number: 6
-  citation: Sigmoidal Auxiliary Tendon-Driven Mechanism Reinforcing Structural Stiffness of Hyper- Redundant Manipulator for Endoscopic Surgery H. Kim, J. M. You, M. Hwang, K. Kyung, and D. S. Kwon Soft Robotics, Vol. 10, No. 2, pp. 234-245, April 2023
-  url: ''
-- number: 7
-  citation: 'Automating Surgical Peg Transfer: Calibration with Deep Learning Can Exceed Speed, Accuracy, and Consistency of Humans M. Hwang, J. Ichnowski, B. Thananjeyan, D. Seita, S. Paradis, D. Fer, T. Low, and K. Goldberg IEEE Transactions on Automation Science and Engineering (T-ASE), Vol. 20, No. 2, pp. 909-922, April 2023'
-  url: ''
+  title: 'Automating Surgical Peg Transfer: Calibration with Deep Learning Can Exceed Speed, Accuracy, and Consistency of Humans'
+  authors: 'M. Hwang, J. Ichnowski, B. Thananjeyan, D. Seita, S. Paradis, D. Fer, T. Low, and K. Goldberg'
+  venue: 'IEEE Transactions on Automation Science and Engineering, Vol. 20, No. 2, pp. 909–922, 2023'
+  pub: 'https://ieeexplore.ieee.org/document/9772013'
+  pdf: 'https://drive.google.com/file/d/1Qjcov8hLsuifSnZ1HWwODdDHBt3QlRmG/view?usp=sharing'
   selected: true
   home_rank: 4
   home_title: 'Automating Surgical Peg Transfer: Calibration with Deep Learning Can Exceed Speed, Accuracy, and Consistency of Humans'
-  home_authors: M. Hwang, J. Ichnowski, B. Thananjeyan, D. Seita, S. Paradis, D. Fer, T. Low, and K. Goldberg
-  home_venue: IEEE Transactions on Automation Science and Engineering, 2023
+  home_authors: 'M. Hwang, J. Ichnowski, B. Thananjeyan, D. Seita, S. Paradis, D. Fer, T. Low, and K. Goldberg'
+  home_venue: 'IEEE Transactions on Automation Science and Engineering, 2023'
+- number: 7
+  title: 'Bed-mounted laparoscopic surgical robot system with novel positioning arm mechanism'
+  authors: 'D. G. Chung, M. Hwang, B. Cheon, D. Kong, D. H. Kang, D. H. Lee, C. K. Kim, D. Kim, J. M. Han, Y. G. Kim, and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 18, No. 4, e2402, 2022'
+  pub: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/rcs.2402'
+  pdf: 'https://drive.google.com/file/d/1snqhs7LV_eV0xfK-j3I2YpwxF_jJzqiK/view?usp=sharing'
 - number: 8
-  citation: Bed-mounted laparoscopic surgical robot system with novel positioning arm mechanism D. G. Chung, M. Hwang, B. Cheon, D. Kong, D. H. Kang, D. H. Lee, C. K. Kim, D. Kim, J. M. Han, Y. G. Kim, D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 18, No. 4, e2402, April 5, 2022
-  url: ''
+  title: 'Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones'
+  authors: 'B. Thananjeyan, A. Balakrishna, S. Nair, M. Luo, K. Srinivasan, M. Hwang, J. E. Gonzalez, J. Ibarz, C. Finn, and K. Goldberg'
+  venue: 'IEEE Robotics and Automation Letters, Vol. 6, No. 3, pp. 4915–4922, 2021'
+  pub: 'https://ieeexplore.ieee.org/document/9392290'
+  pdf: 'https://drive.google.com/file/d/1wGvVkKHKi_9rq-hC3PG5MZeOp1RYeiJA/view?usp=sharing'
 - number: 9
-  citation: 'Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones B. Thananjeyan, A. Balakrishna, S. Nair, M. Luo, K. Srinivasan, M. Hwang, J. E. Gonzalez, J. Ibarz, C. Finn, and K. Goldberg IEEE Robotics and Automation Letters (RA-L), Vol. 6, No. 3, pp. 4915-4922, July, 2021'
-  url: ''
+  title: 'A novel microsurgery robot mechanism with mechanical motion scalability for intraocular and reconstructive surgery'
+  authors: 'U. J. Yang, D. Kim, M. Hwang, D. Kong, J. Kim, Y. H. Nho, W. Lee, and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 17, No. 3, e2240, 2021'
+  pub: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/rcs.2240'
+  pdf: 'https://drive.google.com/file/d/1D6Zl6nyT7MnNZnJp2jNTARplHr2MDa8V/view?usp=sharing'
 - number: 10
-  citation: A novel microsurgery robot mechanism with mechanical motion scalability for intraocular and reconstructive surgery U. J. Yang, D. Kim, M. Hwang, D. Kong, J. Kim, Y. Hoon, Nho, W. Lee, and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 17, No. 3, e2240, 2021
-  url: ''
+  title: 'A Highly Intuitive and Ergonomic Redundant Joint Master Device for 4-Degrees of Freedom Flexible Endoscopic Surgery Robot'
+  authors: 'J. Ahn, J. Kim, H. Lee, M. Hwang, and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 17, No. 1, pp. 1–14, 2021'
+  pub: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/rcs.2147'
+  pdf: 'https://drive.google.com/file/d/19jdjRkoOp42aGRcS2piSs1f0qaWrHX4n/view?usp=sharing'
 - number: 11
-  citation: A Highly Intuitive and Ergonomic Redundant Joint Master Device for 4-Degrees of Freedom Flexible Endoscopic Surgery Robot J. Ahn, J. Kim, H. Lee, M. Hwang, and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 17, No. 1, pp. 1- 14, Feb. 2021
-  url: ''
+  title: 'Efficiently Calibrating Cable-Driven Surgical Robots With RGBD Sensing, Temporal Windowing, and Linear and Recurrent Neural Network Compensation'
+  authors: 'M. Hwang, B. Thananjeyan, S. Paradis, D. Seita, J. Ichnowski, D. Fer, T. Low, and K. Goldberg'
+  venue: 'IEEE Robotics and Automation Letters, Vol. 5, No. 4, pp. 5937–5944, 2020'
+  pub: 'https://ieeexplore.ieee.org/document/9145695'
+  pdf: 'https://drive.google.com/file/d/1Pe0vEifE_g84uQ9aKxOWFFsvbYuLa-jC/view?usp=sharing'
 - number: 12
-  citation: Efficiently Calibrating Cable-Driven Surgical Robots With RGBD Sensing, Temporal Windowing, and Linear and Recurrent Neural Network Compensation M. Hwang, B. Thananjeyan, S. Paradis, D. Seita, J. Ichnowski, D. Fer, T. Low, and K. Goldberg IEEE Robotics and Automation Letters, Vol. 5, No. 4, pp. 5937-5944, Oct. 2020
-  url: ''
-- number: 13
-  citation: 'K-FLEX: A flexible robotic platform for scar-free endoscopic surgery M. Hwang and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 16, No. 2, e2078, April 2020'
-  url: ''
+  title: 'K-FLEX: A flexible robotic platform for scar-free endoscopic surgery'
+  authors: 'M. Hwang and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 16, No. 2, e2078, 2020'
+  pub: 'https://onlinelibrary.wiley.com/doi/10.1002/rcs.2078'
+  pdf: 'https://drive.google.com/file/d/1nYC3lfVJfcfhkab3_2HADjQn64_KOwOD/view?usp=sharing'
   selected: true
   home_rank: 5
   home_title: 'K-FLEX: A Flexible Robotic Platform for Scar-Free Endoscopic Surgery'
-  home_authors: M. Hwang and D. S. Kwon
-  home_venue: The International Journal of Medical Robotics and Computer Assisted Surgery, 2020
+  home_authors: 'M. Hwang and D. S. Kwon'
+  home_venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, 2020'
+- number: 13
+  title: 'Evaluation of a robotic arm assisted endoscope to facilitate endoscopic submucosal dissection (with video)'
+  authors: 'M. Hwang, S. W. Lee, K. C. Park, H. J. Sul, and D. S. Kwon'
+  venue: 'Gastrointestinal Endoscopy, Vol. 91, No. 3, pp. 699–706, 2020'
+  pub: 'https://www.sciencedirect.com/science/article/abs/pii/S0016510719324307'
+  pdf: 'https://drive.google.com/file/d/1g4lO5g7o2MfEJkKKegYJ-_BYuPBu-pu4/view?usp=sharing'
 - number: 14
-  citation: Evaluation of a robotic arm assisted endoscope to facilitate endoscopic submucosal dissection (with video) M. Hwang, S. W. Lee, K. C. Park, H. J. Sul, and D. S. Kwon Gastrointestinal Endoscopy, Vol. 91, No. 3, pp. 699-706, March 2020
-  url: ''
+  title: 'Effect of backlash hysteresis of surgical tool bending joints on task performance in teleoperated flexible endoscopic robot'
+  authors: 'H. Kim, M. Hwang, J. Kim, J. M. You, C. S. Lim, and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 16, No. 1, e2047, 2020'
+  pub: 'https://onlinelibrary.wiley.com/doi/10.1002/rcs.2047'
+  pdf: 'https://drive.google.com/file/d/141JQxEbXDQqRUlcmNFvjf_qwegS3mst1/view?usp=sharing'
 - number: 15
-  citation: Effect of backlash hysteresis of surgical tool bending joints on task performance in teleoperated flexible endoscopic robot H. Kim, M. Hwang, J. Kim, J. M. You, C. S. Lim, and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 16, No. 1, e2047, Feb. 2020
-  url: ''
+  title: 'Strong Continuum Manipulator for Flexible Endoscopic Surgery'
+  authors: 'M. Hwang and D. S. Kwon'
+  venue: 'IEEE/ASME Transactions on Mechatronics, Vol. 24, No. 5, pp. 2193–2203, 2019'
+  pub: 'https://ieeexplore.ieee.org/document/8782626'
+  pdf: 'https://drive.google.com/file/d/1CEgpWTu2wCgfGDjZqpBkxOcsxVvKVb1B/view?usp=sharing'
 - number: 16
-  citation: Strong Continuum Manipulator for Flexible Endoscopic Surgery M. Hwang and D. S. Kwon IEEE/ASME Transactions on Mechatronics, Vol. 24, No. 5, pp. 2193-2203, Oct. 2019
-  url: ''
+  title: 'A 3-Degrees-of-Freedom Gravity-Compensated Robotic Arm with Roll-Pitch-Translational Motion for Remote Center of Motion'
+  authors: 'C. K. Kim, D. G. Chung, M. Hwang, B. Cheon, H. Kim, J. Kim, and D. S. Kwon'
+  venue: 'IEEE Robotics and Automation Letters, Vol. 4, No. 4, pp. 3473–3480, 2019'
+  pub: 'https://ieeexplore.ieee.org/document/8755445'
+  pdf: 'https://drive.google.com/file/d/1M35dQvb8AxtkUdN6PyhAMtnsDxzjSMgr/view?usp=sharing'
 - number: 17
-  citation: A 3-Degrees-of-Freedom Gravity-Compensated Robotic Arm with Roll-Pitch-Translational Motion for Remote Center of Motion C. K. Kim, D. G. Chung, M. Hwang, B. Cheon, H. Kim, J. Kim, and D. S. Kwon IEEE Robotics and Automation Letters, Vol. 4, No. 4, pp. 3473-3480, Oct. 2019
-  url: ''
+  title: 'A master manipulator with a remote-center-of-motion kinematic structure for a minimally invasive robotic surgical system'
+  authors: 'H. Lee, B. Cheon, M. Hwang, D. Kang, and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 14, No. 1, e1865, 2018'
+  pub: 'https://onlinelibrary.wiley.com/doi/10.1002/rcs.1865'
+  pdf: 'https://drive.google.com/file/d/1XCTPQ7rf2n-XJOgRNg-O4dVjw2gRCwfL/view?usp=sharing'
 - number: 18
-  citation: A master manipulator with a remote-center-of-motion kinematic structure for a minimally invasive robotic surgical system H. Lee, B. Cheon, M. Hwang, D. Kang, and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 14, No. 1, Feb. 2018
-  url: ''
-- number: 19
-  citation: A single port surgical robot system with novel elbow joint mechanism for high force transmission M. Hwang, U. J. Yang, D. Kong, D. G. Chung, J. Lim, D. H. Lee, D. H. Kim, D. Shin, T. Jang, J. W. Kim, and D. S. Kwon The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 13, No. 4, Dec. 2017
-  url: ''
+  title: 'A single port surgical robot system with novel elbow joint mechanism for high force transmission'
+  authors: 'M. Hwang, U. J. Yang, D. Kong, D. G. Chung, J. Lim, D. H. Lee, D. H. Kim, D. Shin, T. Jang, J. W. Kim, and D. S. Kwon'
+  venue: 'The International Journal of Medical Robotics and Computer Assisted Surgery, Vol. 13, No. 4, e1808, 2017'
+  pub: 'https://onlinelibrary.wiley.com/doi/abs/10.1002/rcs.1808'
+  pdf: 'https://drive.google.com/file/d/1pIwpNbfSYNQNjbKd1fNvs4_mXFDjNRa_/view?usp=sharing'
 conference:
 - number: 1
-  citation: Learning Optimal Strategies for Needle Handover in Surgical Suturing C. Kim, J. Yoon, S. Park, H. Park, S. Lee, and M. Hwang IEEE International Conference on Robotics and Automation (ICRA), June 1–5, 2026
-  url: ''
+  title: 'Learning Optimal Strategies for Needle Handover in Surgical Suturing'
+  authors: 'C. Kim, J. Yoon, H. Lee, S. Park, H. Park, S. Lee, M. Yip, and M. Hwang'
+  venue: 'IEEE International Conference on Robotics and Automation (ICRA), Vienna, Austria, 2026'
+  pub: ''
+  pdf: 'https://drive.google.com/file/d/1MuGud4w-vzqPjkgNrnzjq1OF-YbgBRJs/view?usp=sharing'
   selected: true
   home_rank: 1
-  home_title: Learning Optimal Strategies for Needle Handover in Surgical Suturing
-  home_authors: C. Kim, J. Yoon, S. Park, H. Park, S. Lee, and M. Hwang
-  home_venue: IEEE International Conference on Robotics and Automation (ICRA), 2026
+  home_title: 'Learning Optimal Strategies for Needle Handover in Surgical Suturing'
+  home_authors: 'C. Kim, J. Yoon, H. Lee, S. Park, H. Park, S. Lee, M. Yip, and M. Hwang'
+  home_venue: 'IEEE International Conference on Robotics and Automation (ICRA), 2026'
 - number: 2
-  citation: Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency M. Park, C. An, J. Park, J. Kang, and M. Hwang IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October 19-25, 2025
-  url: ''
+  title: 'Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators'
+  authors: 'J. Park, C. An, M. Park, I. Ullah, S. Park, and M. Hwang'
+  venue: 'arXiv:2602.16365, 2026'
+  pub: 'https://arxiv.org/abs/2602.16365'
+  pdf: 'https://drive.google.com/file/d/1dDh5FHGgLHtVQHkb93sdCRU7ekmdyCMq/view?usp=sharing'
+  selected: true
+  home_rank: 2
+  home_title: 'Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators'
+  home_authors: 'J. Park, C. An, M. Park, I. Ullah, S. Park, and M. Hwang'
+  home_venue: 'arXiv:2602.16365, 2026'
 - number: 3
-  citation: 'OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment J. Park, C. Moon, D. Lee, K. Kim, and M. Hwang International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), September 23-27, 2025'
-  url: ''
+  title: 'Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency'
+  authors: 'M. Park, C. An, J. Park, J. Kang, and M. Hwang'
+  venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China, 2025'
+  pub: 'https://ieeexplore.ieee.org/document/11246256'
+  pdf: 'https://drive.google.com/file/d/1ZnbsLoVBmYyp7cgwPipvdwwVbajfrFQd/view?usp=sharing'
 - number: 4
-  citation: 'Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern J. Yoon, J. Park, H. Park, H. Lee, S. Lee, and M. Hwang IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), October 14-18, 2024'
-  url: ''
+  title: 'OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment'
+  authors: 'J. Park, C. Moon, D. Lee, K. Kim, and M. Hwang'
+  venue: 'International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Daejeon, Republic of Korea, 2025'
+  pub: 'https://dl.acm.org/doi/10.1007/978-3-032-04981-0_36'
+  pdf: 'https://drive.google.com/file/d/1Qd-X4cCNogqazMeLDu0ikqp7mHRdd8I9/view?usp=sharing'
 - number: 5
-  citation: Design of a Multi-bending Flexible Manipulator for Gastrointestinal Surgery H. Park and M. Hwang The 22nd International Conference on Control, Automation and Systems (ICCAS), Nov. 27-Dec. 1, 2022
-  url: ''
+  title: 'Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern'
+  authors: 'J. Yoon, J. Park, H. Park, H. Lee, S. Lee, and M. Hwang'
+  venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Abu Dhabi, United Arab Emirates, 2024'
+  pub: 'https://ieeexplore.ieee.org/document/10802398'
+  pdf: 'https://drive.google.com/file/d/1Fd8NVZz5HGuN6iVgFGJdcn954wnpuGka/view?usp=sharing'
 - number: 6
-  citation: Design and Kinematics Modeling of Flexible Continuum Manipulator for Endoscopic Surgery S. H. Jang, J. Park, and M. Hwang The 22nd International Conference on Control, Automation and Systems (ICCAS), Nov. 27-Dec. 1, 2022
-  url: ''
+  title: 'Learning to Localize, Grasp, and Hand Over Unmodified Surgical Needles'
+  authors: 'A. Wilcox, J. Kerr, B. Thananjeyan, J. Ichnowski, M. Hwang, S. Paradis, D. Fer, and K. Goldberg'
+  venue: 'IEEE International Conference on Robotics and Automation (ICRA), Philadelphia, PA, USA, 2022'
+  pub: 'https://ieeexplore.ieee.org/document/9812393'
+  pdf: 'https://drive.google.com/file/d/1pVzDB50EvF0DNtpTiytjkwPjHy4wrb2Y/view?usp=sharing'
 - number: 7
-  citation: Learning to Localize, Grasp, and Hand Over Unmodified Surgical Needles A. Wilcox, J. Kerr, B. Thananjeyan, J. Ichnowski, M. Hwang, S. Paradis, D. Fer, K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 23-27, 2022
-  url: ''
+  title: 'Untangling Dense Non-Planar Knots by Learning Manipulation Features and Recovery Policies'
+  authors: 'P. Sundaresan, J. Grannen, B. Thananjeyan, A. Balakrishna, J. Ichnowski, E. Novoseller, M. Hwang, M. Laskey, J. E. Gonzalez, and K. Goldberg'
+  venue: 'Robotics: Science and Systems (RSS), 2021'
+  pub: 'https://roboticsconference.org/2021/program/papers/013/index.html'
+  pdf: 'https://drive.google.com/file/d/1PJssSKM-gtgq0ALiNIAFrfYNhNnNMeXw/view?usp=sharing'
 - number: 8
-  citation: 'Untangling Dense Non-Planar Knots by Learning Manipulation Features and Recovery Policies P. Sundaresan, J. Grannen, B. Thananjeyan, A. Balakrishna, J. Ichnowski, E. Novoseller, M. Hwang, M. Laskey, J. E. Gonzalez, K. Goldberg Robotics: Science and Systems (RSS), July 12–16, 2021'
-  url: ''
+  title: 'Intermittent Visual Servoing: Efficiently Learning Policies Robust to Instrument Changes for High-precision Surgical Manipulation'
+  authors: 'S. Paradis, M. Hwang, B. Thananjeyan, J. Ichnowski, D. Seita, D. Fer, T. Low, J. E. Gonzalez, and K. Goldberg'
+  venue: 'IEEE International Conference on Robotics and Automation (ICRA), 2021'
+  pub: 'https://ieeexplore.ieee.org/document/9561070'
+  pdf: 'https://drive.google.com/file/d/1Kg9x7OhAra2GyZPjp2ZjqN2Qz1OhDb-i/view?usp=sharing'
 - number: 9
-  citation: 'Intermittent Visual Servoing: Efficiently Learning Policies Robust to Instrument Changes for High-precision Surgical Manipulation S. Paradis, M. Hwang, B. Thananjeyan, J. Ichnowski, D. Seita, D. Fer, T. Low, and K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 30, 2021'
-  url: ''
+  title: 'Learning Dense Visual Correspondences in Simulation to Smooth and Fold Real Fabrics'
+  authors: 'A. Ganapathi, P. Sundaresan, B. Thananjeyan, A. Balakrishna, D. Seita, J. Grannen, M. Hwang, R. Hoque, J. E. Gonzalez, N. Jamali, K. Yamane, S. Iba, and K. Goldberg'
+  venue: 'IEEE International Conference on Robotics and Automation (ICRA), 2021'
+  pub: 'https://ieeexplore.ieee.org/document/9561980'
+  pdf: 'https://drive.google.com/file/d/1O6s44YK9iXFgNmYWwvHV8n-6KheFC0ma/view?usp=sharing'
 - number: 10
-  citation: 'Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones B. Thananjeyan, A. Balakrishna, S. Nair, M. Luo, K. Srinivasan, M. Hwang, J. E. Gonzalez, J. Ibarz, C. Finn, and K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 30, 2021'
-  url: ''
+  title: 'Payload optimization of surgical instruments with rolling joint mechanisms'
+  authors: 'D. H. Lee, M. Hwang, J. Kim, and D. S. Kwon'
+  venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020'
+  pub: 'https://ieeexplore.ieee.org/document/9341318'
+  pdf: 'https://drive.google.com/file/d/1gXBNbysfqknSI88uovJtmB26dQDVMZv8/view?usp=sharing'
 - number: 11
-  citation: Learning Dense Visual Correspondences in Simulation to Smooth and Fold Real Fabrics A. Ganapathi, P. Sundaresan, B. Thananjeyan, A. Balakrishna, D. Seita, J. Grannen, M. Hwang, R. Hoque, J. E. Gonzalez, N. Jamali, K. Yamane, S. Iba, and K. Goldberg IEEE International Conference on Robotics and Automation (ICRA), May 30, 2021
-  url: ''
+  title: 'Deep Imitation Learning of Sequential Fabric Smoothing Policies'
+  authors: 'D. Seita, A. Ganapathi, R. Hoque, M. Hwang, E. Cen, A. K. Tanwani, A. Balakrishna, B. Thananjeyan, J. Ichnowski, N. Jamali, K. Yamane, S. Iba, J. Canny, and K. Goldberg'
+  venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2020'
+  pub: 'https://ieeexplore.ieee.org/document/9341608'
+  pdf: 'https://drive.google.com/file/d/1VSAriwBMdZj2Hq74TLsBWaeblK3zzWJu/view?usp=sharing'
 - number: 12
-  citation: 'Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones B. Thananjeyan, A. Balakrishna, S. Nair, M. Luo, K. Srinivasan, M. Hwang, J. E. Gonzalez, J. Ibarz, C. Finn, and K. Goldberg Neural Information Processing Systems (NeurIPS) Workshop, Dec. 6, 2020'
-  url: ''
+  title: 'Applying Depth-Sensing to Automated Surgical Manipulation with a da Vinci Robot'
+  authors: 'M. Hwang, D. Seita, B. Thananjeyan, J. Ichnowski, S. Paradis, D. Fer, T. Low, and K. Goldberg'
+  venue: 'International Symposium on Medical Robotics (ISMR), Atlanta, GA, USA, 2020'
+  pub: 'https://ieeexplore.ieee.org/document/9312948'
+  pdf: 'https://drive.google.com/file/d/1eRbr_ZbM2V0lYMgPTqLjO0-R_GJ4iSYX/view?usp=sharing'
 - number: 13
-  citation: Payload optimization of surgical instruments with rolling joint mechanisms D. H. Lee, M. Hwang, J. Kim, and D. S. Kwon IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Oct. 25-Dec. 24, 2020
-  url: ''
+  title: 'Untangling Dense Knots by Learning Task-Relevant Keypoints'
+  authors: 'J. Grannen, P. Sundaresan, B. Thananjeyan, J. Ichnowski, A. Balakrishna, M. Hwang, V. Viswanath, M. Laskey, J. E. Gonzalez, and K. Goldberg'
+  venue: 'Conference on Robot Learning (CoRL), 2020'
+  pub: 'https://corlconf.github.io/corl2020/paper_166/'
+  pdf: 'https://drive.google.com/file/d/1ASwGR1T0pceTqqr8h9qj72tfC_DDFU-H/view?usp=sharing'
 - number: 14
-  citation: Deep Imitation Learning of Sequential Fabric Smoothing Policies D. Seita, A. Ganapathi, R. Hoque, M. Hwang, E. Cen, A. K. Tanwani, A. Balakrishna, B. Thananjeyan, J. Ichnowski, N. Jamali, K. Yamane, S. Iba, J. Canny, and K. Goldberg IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Oct. 25-Dec. 24, 2020
-  url: ''
+  title: 'Effects of Flexible Surgery Robot on Endoscopic Procedure: Preliminary Bench-Top User Test'
+  authors: 'J. Kim, M. Hwang, D. Lee, H. Kim, J. Ahn, J. You, D. Baek, and D. S. Kwon'
+  venue: 'IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), New Delhi, India, 2019'
+  pub: 'https://ieeexplore.ieee.org/document/8956333'
+  pdf: 'https://drive.google.com/file/d/1e7NdWs4aKlT_9XxFxfQsuH3FROU1zcp0/view?usp=sharing'
 - number: 15
-  citation: Efficiently Calibrating Cable-Driven Surgical Robots With RGBD Sensing, Temporal Windowing, and Linear and Recurrent Neural Network Compensation M. Hwang, B. Thananjeyan, S. Paradis, D. Seita, J. Ichnowski, D. Fer, T. Low, and K. Goldberg Workshop on Cognitive Robotic Surgery, IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), Oct. 25-Dec. 24, 2020
-  url: ''
+  title: 'Robotic endoscopy system (easyEndo) with a robotic arm mountable on a conventional endoscope'
+  authors: 'D. H. Lee, M. Hwang, and D. S. Kwon'
+  venue: 'IEEE International Conference on Robotics and Automation (ICRA), Montreal, QC, Canada, 2019'
+  pub: 'https://ieeexplore.ieee.org/document/8793626'
+  pdf: 'https://drive.google.com/file/d/16xvt8-iC24m-gf5XLysDuKnRz4r-VX0-/view?usp=sharing'
 - number: 16
-  citation: Applying Depth-Sensing to Automated Surgical Manipulation with a da Vinci Robot M. Hwang*, D. Seita*, B. Thananjeyan, J. Ichnowski, S. Paradis, D. Fer, T. Low, and K. Goldberg International Symposium on Medical Robotics (ISMR), Nov. 18-20, 2020
-  url: ''
+  title: 'Kinematic Analysis of Needle-like Overtube Supporting Robot'
+  authors: 'J. Ahn, M. Hwang, and D. S. Kwon'
+  venue: 'International Conference on Ubiquitous Robots (UR), Seoul, Republic of Korea, 2018'
+  pub: 'https://ieeexplore.ieee.org/document/8441780'
+  pdf: 'https://drive.google.com/file/d/1oENOQOt7gcleDA19mgb5GQ0OoRoPyKeM/view?usp=sharing'
 - number: 17
-  citation: Untangling Dense Knots by Learning Task-Relevant Keypoints J. Grannen, P. Sundaresan, B. Thananjeyan, J. Ichnowski, A. Balakrishna, M. Hwang, V. Viswanath, M. Laskey, J. E. Gonzalez, and K. Goldberg Conference on Robot Learning (CoRL), Nov. 16-18, 2020
-  url: ''
+  title: 'Path Planning for Automation of Surgery Robot based on Probabilistic Roadmap and Reinforcement Learning'
+  authors: 'D. Baek, M. Hwang, H. Kim, and D. S. Kwon'
+  venue: 'International Conference on Ubiquitous Robots (UR), Seoul, Republic of Korea, 2018'
+  pub: 'https://ieeexplore.ieee.org/document/8441801'
+  pdf: 'https://drive.google.com/file/d/1ZUEExXO8HPSOedxMsylN6LrmGGQB9YWp/view?usp=sharing'
 - number: 18
-  citation: Ex-vivo suturing trials with a 5-DoF robot arm for flexible endoscopic surgery robot J. Kim, J. Ahn, M. Hwang, H. Kim, D. Baek, J. You, D. Lee, and D. S. Kwon The 15th Asian Conference on Computer Aided Surgery, Nov. 2019
-  url: ''
+  title: 'Robust trajectory tracking of Master-Slave surgery robot system based on PD with Integral Sliding Mode Control'
+  authors: 'H. Kim, M. Hwang, D. Baek, and D. S. Kwon'
+  venue: 'International Conference on Ubiquitous Robots (UR), Seoul, Republic of Korea, 2018'
+  pub: 'https://ieeexplore.ieee.org/document/8441891'
+  pdf: 'https://drive.google.com/file/d/12vfF5N0zKpdPdCConfwBex-Mb82MrMip/view?usp=sharing'
 - number: 19
-  citation: 'Effects of Flexible Surgery Robot on Endoscopic Procedure: Preliminary Bench-Top User Test J. Kim, M. Hwang, D. Lee, H. Kim, J. Ahn, J. You, D. Baek, and D. S. Kwon IEEE International Conference on Robot and Human Interactive Communication (Ro-Man), Oct. 14-18, 2019'
-  url: ''
+  title: 'Gravity Compensation Mechanism for Roll-Pitch Rotation of a Robotic Arm'
+  authors: 'D. G. Chung, M. Hwang, J. Won, and D. S. Kwon'
+  venue: 'IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Daejeon, Republic of Korea, 2016'
+  pub: 'https://ieeexplore.ieee.org/document/7759076'
+  pdf: 'https://drive.google.com/file/d/13Xkf6BX2mAuSV7aDzwt4w0we0DOEhJ-i/view?usp=sharing'
 - number: 20
-  citation: Development of 5-DOFs Master-Slave system with intentional adjustment of hysteresis based on antagonistic tendon control H. Kim, J. Kim, M. Hwang, and D. S. Kwon 12th Hamlyn Symposium on Medical Robotics, Jun. 23-26, 2019
-  url: ''
+  title: 'Indirect measure of joint torques of surgical instrument in robot-assisted laparoscopic surgery'
+  authors: 'D. Kong, M. Hwang, D. H. Kang, and D. S. Kwon'
+  venue: 'International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Xiamen, China, 2016'
+  pub: 'https://ieeexplore.ieee.org/document/7625764'
+  pdf: 'https://drive.google.com/file/d/1p7gZGFLLs8Bwz7Ea8nNvR_VGl7QN9GKu/view?usp=sharing'
 - number: 21
-  citation: A robotic surgical arm dockable on an endoscope to prevent organ injury during insertion D. H. Lee, M. Hwang, J. Kim, and D. S. Kwon The 33rd Computer Assisted Radiology and Surgery (CARS), June 18-21, 2019
-  url: ''
-- number: 22
-  citation: Robotic endoscopy system (easyEndo) with a robotic arm mountable on a conventional endoscope D. H. Lee, M. Hwang, and D. S. Kwon IEEE International Conference on Robotics and Automation (ICRA), May 20-24, 2019
-  url: ''
-- number: 23
-  citation: A flexible endoscopic surgery robot K-FLEX and its feasibility validation in in-vivo animal trial (Best paper awarded) M. Hwang, J. H. Kim, D. H. Lee, J. Ahn, J. You, D. Baek, H. Kim, D. Son, and D. S. Kwon The 14th Asian Conference on Computer Aided Surgery, Nov. 16-18, 2018
-  url: ''
-- number: 24
-  citation: Hysteresis reduction of Tendon-Sheath System for Flexible Surgery Robot using Vision-based Reference Compensation D. Baek, M. Hwang, J. H. Seo, J. Kim, and D. S. Kwon, The 14th Asian Conference on Computer Aided Surgery, Nov. 16-18, 2018
-  url: ''
-- number: 25
-  citation: Cascade-based antagonistic tendon control for hysteresis reduction of flexible joint robot H. Kim, M. Hwang, J. Kim, J. M. You, and D. S. Kwon The 14th Asian Conference on Computer Aided Surgery, Nov. 16-18, 2018
-  url: ''
-- number: 26
-  citation: 'Master Device for Flexible Endoscopic Surgery Robot: Design Considerations for Intuitiveness and Low Fatigue J. Ahn, J. You, M. Hwang, J. Kim, D. G. Chung, and D. S. Kwon The 14th Asian Conference on Computer Aided Surgery, Nov. 16-18, 2018'
-  url: ''
-- number: 27
-  citation: All-joint-control master device for translation-roll-yaw-grasping motion and its effectiveness on surgical task J. M. You, M. Hwang, J. Kim, H. Kim, and D. S. Kwon The 14th Asian Conference on Computer Aided Surgery, Nov. 16-18, 2018
-  url: ''
-- number: 28
-  citation: Flexible Endoscopic Surgery Robot System, K-FLEX M. Hwang, D. H. Lee, J. Ahn, J. You, D. Baek, H. Kim, R. R. Kirchmeier, and D. S. Kwon International Conference on Control, Automation and Systems (ICCAS), Oct. 17-20, 2018
-  url: ''
-- number: 29
-  citation: Flexible Endoscopic Surgery Robot System, K-FLEX (Best application award and overall winner) M. Hwang, D. H. Lee, J. Ahn, J. You, D. Baek, H. Kim, R. R. Kirchmeier, and D. S. Kwon Surgical Robot Challenge 2018, pp. 14, June 24, 2018
-  url: ''
-- number: 30
-  citation: Comparison of Master-Slave Mapping Strategies for Efficient Robotic Endoscopy J. Ahn, M. Hwang, D. Baek, H. Kim, and D. S. Kwon 11th Hamlyn Symposium on Medical Robotics 2018, pp. 9, June 24-27, 2018
-  url: ''
-- number: 31
-  citation: Cobra-type robotic arm for tissue traction attachable to robotized endoscopy system (EasyEndo) D. H. Lee, B. Cheon, M. Hwang, and D. S. Kwon 11th Hamlyn Symposium on Medical Robotics 2018, pp. 8, June 24-27, 2018
-  url: ''
-- number: 32
-  citation: Kinematic Analysis of Needle-like Overtube Supporting Robot J. Ahn, M. Hwang, and D. S. Kwon 15th Int. Conf. on Ubiquitous Robots, June 26-30, 2018
-  url: ''
-- number: 33
-  citation: Path Planning for Automation of Surgery Robot based on Probabilistic Roadmap and Reinforcement Learning D. Baek, M. Hwang, H. Kim, and D. S. Kwon 15th Int. Conf. on Ubiquitous Robots, June 26-30, 2018
-  url: ''
-- number: 34
-  citation: Robust trajectory tracking of Master-Slave surgery robot system based on PD with Integral Sliding Mode Control H. Kim, M. Hwang, D. Baek, and D. S. Kwon 15th Int. Conf. on Ubiquitous Robots, June 26-30, 2018
-  url: ''
-- number: 35
-  citation: Customized master controller considering kinematic structure of slave surgical robot D. Baek, M. Hwang, H. Kim, and D. S. Kwon The 13th Asian Conf. on Computer Aided Surgery, Nov. 28, 2017
-  url: ''
-- number: 36
-  citation: A study on mapping strategy for master-slave surgery robot system with redundancy H. Kim, M. Hwang, D. Baek, and D. S. Kwon The 13th Asian Conf. on Computer Aided Surgery, Nov. 28, 2017
-  url: ''
-- number: 37
-  citation: Evaluation of Motion Scaling Effect on Simulated Microsurgery related Task Performance using a Stylus Pen D. S. Kim, U. J. Yang, M. Hwang, D. Kong, and D. S. Kwon The 13th Asian Conf. on Computer Aided Surgery, Nov. 28, 2017
-  url: ''
-- number: 38
-  citation: Strong Continuum Manipulator for Flexible Endoscopic Surgery M. Hwang and D. S. Kwon 10th Hamlyn Symposium on Medical Robotics 2017, pp. 63, June 25-28, 2017
-  url: ''
-- number: 39
-  citation: 'Endo-Trainer: a low-cost training system for da Vinci robotic surgery H. Lee, B. Cheon, D. Kim, D. Lee, D. Jeong, M. Hwang, D. Kang, H. Baek, and D. S. Kwon Computer Assisted Radiology and Surgery, pp. 244-245, June 20-24, 2017'
-  url: ''
-- number: 40
-  citation: Gravity Compensation Mechanism for Roll-Pitch Rotation of a Robotic Arm D. G. Chung, M. Hwang, J. Won, and Dong-Soo Kwon IEEE/RSJ Int. Conf. on Intelligent Robots and Systems (IROS), pp. 338-343, Oct. 9-14, 2016
-  url: ''
-- number: 41
-  citation: Indirect measure of joint torques of surgical instrument in robot-assisted laparoscopic surgery D. Kong, M. Hwang, D. Kang, and D. S. Kwon 13th Int. Conf. on Ubiquitous Robots and Ambient Intelligence, Aug 19-22, 2016
-  url: ''
-- number: 42
-  citation: Development of an Elbow Equipped Instrument for Robotic Single Port Laparoscopy D. Gong, M. Hwang, H. Lee, and D. S. Kwon The 11th Asian Conf. on Computer Aided Surgery, July 9, 2015
-  url: ''
-- number: 43
-  citation: 'A steerable endoscopic robot for endonasal skull base surgery: development and a cadaver experiment (Best paper awarded) K. Kim, W. Lee, Y. Kim, D. Choi, T. Choi, S. Kim, M. Hwang, D. Kwon, S. Kim, S. Kang 19th Annual Conf. of the International Society of Computer Aided Surgery, pp. 71-72, June 24-27, 2015'
-  url: ''
-- number: 44
-  citation: Compact surgical robot system using elbowed instruments for SPL D. Y. Gong, D. G. Chung, M. Hwang, H. Lee, J. W. Suh, and D. S. Kwon The 29th Computer Assisted Radiology and Surgery, pp. 245-246, Feb. 24-27, 2015
-  url: ''
-- number: 45
-  citation: 7mm surgical instrument for single port surgery robot with link type elbow J. Lim, M. Hwang, and D. S. Kwon The 29th Computer Assisted Radiology and Surgery, pp. 251-253, Feb. 24-27, 2015
-  url: ''
-- number: 46
-  citation: A Portable Endoscopic Tool Handler (PETH) with its Ex-vivo ESD Trials M. Hwang, H. Chung, and D. S. Kwon The 11th Int. Conf. on Ubiquitous Robots and Ambient Intelligence, pp. 85-87, Nov. 12-15, 2014
-  url: ''
-- number: 47
-  citation: 'Design and Verification of a Portable Endoscopic Tool Handler: PETH M. Hwang, H. Chung, and D. S. Kwon The 10th Asian Conf. on Computer Aided Surgery, Jan. 31, 2014'
-  url: ''
-- number: 48
-  citation: A Flexible Endoscopic Surgery Robot for NOTES and its In-vivo Animal Experiment (Best paper awarded) M. Hwang, J. Lee, Y. Park, J. Seo, S. Kim, Y. Na, Y. Kim, S. Jeong, and D. S. Kwon The 9th Asian Conf. on Computer Aided Surgery, Sep. 16-18, 2013
-  url: ''
-- number: 49
-  citation: 'Design of a Compact Laparoscopic Assistant Robot: KaLAR 2 J. Lim, D. Y. Gong, M. Hwang, and D. S. Kwon The 9th Asian Conf. on Computer Aided Surgery, Sep. 16-18, 2013'
-  url: ''
-- number: 50
-  citation: Miniaturized force transducer for Minimally Invasive Surgical Instrument M. Hwang, D. S. Kwon, and J. H. Kim The 29th Computer Assisted Radiology and Surgery, June 26, 2013
-  url: ''
+  title: 'A Portable Endoscopic Tool Handler (PETH) with its Ex-vivo ESD Trials'
+  authors: 'M. Hwang, H. Chung, and D. S. Kwon'
+  venue: 'International Conference on Ubiquitous Robots and Ambient Intelligence (URAI), Kuala Lumpur, Malaysia, 2014'
+  pub: 'https://ieeexplore.ieee.org/document/7057401'
+  pdf: 'https://drive.google.com/file/d/1diwLyjAsZTAoj-zLMeZfdq7PnAQqKu7j/view?usp=sharing'
