@@ -7,13 +7,22 @@ permalink: /cv/
 <main class="page">
 <div class="screen-only cv-toolbar"><a href="/">← Home</a><span>Print → Save as PDF</span></div>
 <header><h1>{{ d.profile.name }}</h1><div>{{ d.profile.title }}, {{ d.profile.department }}</div><div>{{ d.profile.institution }} · {{ d.profile.location }}</div></header>
-<section><h2>Academic Appointments</h2>{% for x in d.experience %}<div class="cv-entry"><div class="date">{{ x.period }}</div><div><strong>{{ x.position }}</strong>, {{ x.organization }}{% if x.location %}<span class="meta"> · {{ x.location }}</span>{% endif %}</div></div>{% endfor %}</section>
-<section><h2>Education</h2>{% for x in d.education %}<div class="cv-entry"><div class="date">{{ x.year }}</div><div><strong>{{ x.degree }}{% if x.field %} in {{ x.field }}{% endif %}</strong>, {{ x.institution }}</div></div>{% endfor %}</section>
+
+<section><h2>Academic Appointments</h2>{% for x in d.experience %}<div class="cv-entry"><div class="date">{{ x.period }}</div><div><strong>{{ x.position }}</strong>, {% if x.organization_url and x.organization_url != "" %}<a href="{{ x.organization_url }}">{{ x.organization }}</a>{% else %}{{ x.organization }}{% endif %}{% if x.location %}<span class="meta"> · {{ x.location }}</span>{% endif %}</div></div>{% endfor %}</section>
+
+<section><h2>Education</h2>{% for x in d.education %}<div class="cv-entry"><div class="date">{{ x.year }}</div><div><strong>{{ x.degree }}{% if x.field %} in {{ x.field }}{% endif %}</strong>, {% if x.institution_url and x.institution_url != "" %}<a href="{{ x.institution_url }}">{{ x.institution }}</a>{% else %}{{ x.institution }}{% endif %}</div></div>{% endfor %}</section>
+
 <section><h2>Research Interests</h2><ul class="inline">{% for x in d.profile.research_interests %}<li>{{ x }}</li>{% endfor %}</ul></section>
-<section><h2>Honors &amp; Awards</h2>{% for x in d.awards %}<div class="cv-entry"><div class="date">{{ x.year }}</div><div>{{ x.title }}{% if x.organization %}, {{ x.organization }}{% endif %}</div></div>{% endfor %}</section>
-{% if d.publications and d.publications != empty %}<section><h2>Publications</h2><ol>{% for x in d.publications %}<li>{{ x.authors }}. <strong>{{ x.title }}</strong>. <em>{{ x.venue }}</em>, {{ x.year }}.</li>{% endfor %}</ol></section>{% endif %}
-{% if d.talks and d.talks != empty %}<section><h2>Invited Talks</h2>{% for x in d.talks %}<div class="cv-entry"><div class="date">{{ x.date }}</div><div><strong>{{ x.title }}</strong>, {{ x.venue }}{% if x.location %}, {{ x.location }}{% endif %}</div></div>{% endfor %}</section>{% endif %}
+
+<section><h2>Honors &amp; Awards</h2>{% for x in d.awards %}<div class="cv-entry"><div class="date">{{ x.year }}</div><div>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}{% if x.organization %}, {{ x.organization }}{% endif %}</div></div>{% endfor %}</section>
+
+{% if d.publications and d.publications != empty %}<section><h2>Publications</h2><ol>{% for x in d.publications %}<li>{{ x.authors }}. {% if x.url and x.url != "" %}<a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>{% else %}<strong>{{ x.title }}</strong>{% endif %}. <em>{{ x.venue }}</em>, {{ x.year }}. <span class="pub-links">{% if x.pdf and x.pdf != "" %}<a href="{{ x.pdf }}">[Paper]</a>{% endif %} {% if x.video and x.video != "" %}<a href="{{ x.video }}">[Video]</a>{% endif %} {% if x.code and x.code != "" %}<a href="{{ x.code }}">[Code]</a>{% endif %}</span></li>{% endfor %}</ol></section>{% endif %}
+
+{% if d.talks and d.talks != empty %}<section><h2>Invited Talks</h2>{% for x in d.talks %}<div class="cv-entry"><div class="date">{{ x.date }}</div><div>{% if x.url and x.url != "" %}<a href="{{ x.url }}"><strong>{{ x.title }}</strong></a>{% else %}<strong>{{ x.title }}</strong>{% endif %}, {{ x.venue }}{% if x.location %}, {{ x.location }}{% endif %}</div></div>{% endfor %}</section>{% endif %}
+
 {% if d.grants and d.grants != empty %}<section><h2>Research Grants</h2>{% for x in d.grants %}<div class="cv-entry"><div class="date">{{ x.period }}</div><div><strong>{{ x.title }}</strong>{% if x.sponsor %}, {{ x.sponsor }}{% endif %}</div></div>{% endfor %}</section>{% endif %}
-<section><h2>Teaching</h2>{% for x in d.teaching %}<div class="cv-entry"><div class="date">{{ x.term }}</div><div>{{ x.course }}, {{ x.institution }}</div></div>{% endfor %}</section>
+
+<section><h2>Teaching</h2>{% for x in d.teaching %}<div class="cv-entry"><div class="date">{{ x.term }}</div><div>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.course }}</a>{% else %}{{ x.course }}{% endif %}, {{ x.institution }}</div></div>{% endfor %}</section>
+
 {% if d.students and d.students != empty %}<section><h2>Students</h2>{% for x in d.students %}<div class="cv-entry"><div class="date">{{ x.period }}</div><div><strong>{{ x.name }}</strong> · {{ x.program }}</div></div>{% endfor %}</section>{% endif %}
 </main></body></html>
