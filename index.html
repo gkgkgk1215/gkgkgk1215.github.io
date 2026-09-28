@@ -158,7 +158,7 @@
             <span class="teaching-courses">
               {% for c in x.courses %}
                 <span class="course-line">
-                  {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}{% if forloop.first %}, {{ x.institution }}{% endif %}
+                  {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}, {{ x.institution }}
                 </span>
               {% endfor %}
             </span>
