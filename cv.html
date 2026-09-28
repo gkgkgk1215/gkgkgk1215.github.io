@@ -106,7 +106,7 @@ permalink: /cv/
     <h2>Invited Talks</h2>
     {% for x in talks %}
       <div class="cv-entry">
-        <div class="date">{{ x.date }}</div>
+        <div class="date">{% if x.date and x.date != "" %}{{ x.date }}{% else %}—{% endif %}</div>
         <div>{% if x.url and x.url != "" %}<a href="{{ x.url }}">“{{ x.title }}”</a>{% else %}“{{ x.title }}”{% endif %}, {{ x.venue }}</div>
       </div>
     {% endfor %}
