@@ -111,7 +111,7 @@ footer {
 }
 
 .publication-title {
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .publication-authors,
@@ -121,4 +121,23 @@ footer {
 
 .pub-links {
   margin-left: 1.5mm;
+}
+
+.patent-list {
+  padding-left: 5.5mm;
+}
+
+.patent-entry {
+  margin-bottom: 1.8mm;
+  padding-left: 1mm;
+  break-inside: avoid;
+}
+
+.patent-title {
+  font-weight: 400;
+}
+
+.patent-authors,
+.patent-meta {
+  margin-top: 0.4mm;
 }

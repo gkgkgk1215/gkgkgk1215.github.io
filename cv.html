@@ -142,7 +142,17 @@ permalink: /cv/
 
   <section id="patents">
     <h2>Patents</h2>
-    <ol class="citation-list">{% for x in patents %}<li>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.citation }}</a>{% else %}{{ x.citation }}{% endif %}</li>{% endfor %}</ol>
+    <ol class="patent-list">
+      {% for x in patents %}
+        <li class="patent-entry">
+          <div class="patent-title">
+            {% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}
+          </div>
+          <div class="patent-authors">{{ x.authors }}</div>
+          <div class="patent-meta"><em>{{ x.details }}</em></div>
+        </li>
+      {% endfor %}
+    </ol>
   </section>
 </main>
 </body>
