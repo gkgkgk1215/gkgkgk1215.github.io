@@ -1,30 +1,85 @@
-<!DOCTYPE html>
+---
+---
+{% assign d = site.data.site %}
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minho Hwang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>{{ d.profile.name }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-
 <body>
+<main class="page">
+  <header>
+    <h1>{{ d.profile.name }}</h1>
+    <div>{{ d.profile.title }}, {{ d.profile.institution }}</div>
+    <div class="muted">{{ d.profile.tagline }}</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/cv/">CV</a>
+      {% for link in d.profile.links %}
+        {% if link.url and link.url != "" %}<a href="{{ link.url }}">{{ link.label }}</a>{% endif %}
+      {% endfor %}
+    </nav>
+  </header>
 
-<h1>Minho Hwang</h1>
+  <section>
+    <h2>About</h2>
+    <p>{{ d.profile.about }}</p>
+    <p class="meta">{{ d.profile.department }}<br>{{ d.profile.institution }} · {{ d.profile.location }}</p>
+  </section>
 
-<p>
-Associate Professor<br>
-Department of Robotics & Mechatronics Engineering<br>
-DGIST
-</p>
+  <section>
+    <h2>Research</h2>
+    <ul class="inline">
+      {% for x in d.profile.research_interests %}<li>{{ x }}</li>{% endfor %}
+    </ul>
+  </section>
 
-<p>
-Surgical Robotics · Robot Manipulation · Physical AI
-</p>
+  {% if d.news and d.news != empty %}
+  <section>
+    <h2>News</h2>
+    <ul class="list">
+      {% for x in d.news limit:8 %}
+      <li><span class="date">{{ x.date }}</span>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.text }}</a>{% else %}{{ x.text }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
-<p>
-<a href="#">SURGLAB</a> ·
-<a href="#">Google Scholar</a> ·
-<a href="#">CV</a>
-</p>
+  {% assign selected = d.publications | where:"selected",true %}
+  {% if selected and selected != empty %}
+  <section>
+    <h2>Selected Publications</h2>
+    <ul class="list">
+      {% for x in selected %}
+      <li><span class="date">{{ x.year }}</span>{{ x.authors }}. <strong>{{ x.title }}</strong>. <em>{{ x.venue }}</em>.</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
 
+  <section>
+    <h2>Honors &amp; Awards</h2>
+    <ul class="list">
+      {% for x in d.awards limit:6 %}
+      <li><span class="date">{{ x.year }}</span>{{ x.title }}{% if x.organization %}, {{ x.organization }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Teaching</h2>
+    <ul class="list">
+      {% for x in d.teaching %}
+      <li><span class="date">{{ x.term }}</span>{{ x.course }}, {{ x.institution }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer>Last updated {{ site.time | date:"%Y-%m-%d" }}</footer>
+</main>
 </body>
 </html>
