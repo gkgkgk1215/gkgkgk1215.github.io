@@ -250,8 +250,8 @@ footer {
 
 .cv-entry {
   display: grid;
-  grid-template-columns: 145px minmax(0, 1fr);
-  gap: 12px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 4px;
   margin-bottom: 10px;
 }
 

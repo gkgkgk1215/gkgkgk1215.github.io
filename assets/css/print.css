@@ -55,8 +55,8 @@ h3 {
 }
 
 .cv-entry {
-  grid-template-columns: 32mm 1fr;
-  gap: 2.5mm;
+  grid-template-columns: 25mm 1fr;
+  gap: 1mm;
   margin-bottom: 1.5mm;
   break-inside: avoid;
 }
