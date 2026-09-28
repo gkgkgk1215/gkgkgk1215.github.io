@@ -1,0 +1,63 @@
+profile:
+  name: Minho Hwang
+  title: Associate Professor
+  department: Department of Robotics & Mechatronics Engineering
+  institution: DGIST
+  location: Daegu, Republic of Korea
+  tagline: Surgical Robotics · Robot Manipulation · Physical AI
+  about: >
+    I am an Associate Professor at DGIST and lead SURGLAB.
+    My research focuses on surgical robotics, precision robot manipulation,
+    and physical AI for medical and human-centered robotic systems.
+  research_interests:
+    - Surgical Robotics
+    - Robot Manipulation
+    - Physical AI
+    - Visual Intelligence
+    - Shared Autonomy
+  links:
+    - label: GitHub
+      url: https://github.com/gkgkgk1215
+    - label: SURGLAB
+      url: ""
+    - label: Google Scholar
+      url: ""
+
+experience:
+  - period: "2026–present"
+    position: Associate Professor
+    organization: DGIST
+    location: Daegu, Republic of Korea
+  - period: "2021–2026"
+    position: Assistant Professor
+    organization: DGIST
+    location: Daegu, Republic of Korea
+  - period: "2019–2021"
+    position: Postdoctoral Researcher
+    organization: AUTOLAB, University of California, Berkeley
+    location: Berkeley, CA, USA
+
+education:
+  - year: "2017"
+    degree: Ph.D.
+    field: Mechanical Engineering
+    institution: KAIST
+
+awards:
+  - year: "2026"
+    title: 1st Place, Surgical Robotics Challenge
+    organization: IEEE ICRA 2026
+  - year: "2026"
+    title: Excellence Award, Humanoid Real-World Challenge
+    organization: KIRIA
+
+teaching:
+  - term: "Fall 2026"
+    course: Intelligent Robot Manipulation
+    institution: DGIST
+
+news: []
+publications: []
+talks: []
+students: []
+grants: []
