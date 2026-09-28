@@ -5,8 +5,10 @@ header{border-bottom:1px solid var(--line);padding-bottom:26px;margin-bottom:32p
 h1{font-size:2rem;margin:0 0 5px;letter-spacing:-.02em} h2{font-size:1.02rem;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--line);padding-bottom:6px;margin:0 0 12px}
 p{margin:0 0 12px} section{margin-bottom:32px} a{color:var(--link);text-underline-offset:2px}
 .muted,.meta{color:var(--muted)} nav{margin-top:16px;display:flex;gap:16px;flex-wrap:wrap}
+.profile-top{display:flex;justify-content:space-between;gap:28px;align-items:flex-start}.profile-photo{width:118px;height:118px;object-fit:cover;border-radius:2px}
 .list{list-style:none;padding:0;margin:0}.list li{margin-bottom:9px}.date{display:inline-block;min-width:98px;color:var(--muted)}
 .inline{list-style:none;padding:0;margin:0}.inline li{display:inline}.inline li:not(:last-child)::after{content:" · ";color:var(--muted)}
+.pub-links{white-space:nowrap}.pub-links a{margin-left:5px;font-size:.92em}
 footer{border-top:1px solid var(--line);padding-top:14px;margin-top:45px;color:var(--muted);font-size:.82rem}
 .cv-entry{display:grid;grid-template-columns:115px 1fr;gap:10px;margin-bottom:8px}.cv-toolbar{display:flex;justify-content:space-between;gap:20px;margin-bottom:28px;padding-bottom:10px;border-bottom:1px solid var(--line);font-size:.85rem;color:var(--muted)}
-@media(max-width:620px){.page{width:min(calc(100% - 28px),var(--w));padding-top:30px}.cv-entry{display:block}.cv-entry .date{display:block}}
+@media(max-width:620px){.page{width:min(calc(100% - 28px),var(--w));padding-top:30px}.cv-entry{display:block}.cv-entry .date{display:block}.profile-photo{width:88px;height:88px}.profile-top{gap:16px}}
