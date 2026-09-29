@@ -154,6 +154,17 @@ nav {
   margin-bottom: 5px;
 }
 
+.service-list li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.service-list li::before {
+  position: absolute;
+  left: 0;
+  width: auto;
+}
+
 .plain-list li::before,
 .service-list li::before {
   content: "•";
