@@ -87,7 +87,15 @@
           <span class="date">{{ x.date }}</span>
           <div class="entry-body">
             <div>
-              <strong>{{ x.degree }}</strong>,
+              {% assign degree_parts = x.degree | split: ", " %}
+              <strong>
+                {{ degree_parts[0] }},
+                {% if x.field_url and x.field_url != "" %}
+                  <a class="institution-link" href="{{ x.field_url }}">{{ degree_parts[1] }}</a>
+                {% else %}
+                  {{ degree_parts[1] }}
+                {% endif %}
+              </strong>,
               {% if x.url and x.url != "" %}
                 <a class="institution-link" href="{{ x.url }}">{{ x.institution }}</a>
               {% else %}

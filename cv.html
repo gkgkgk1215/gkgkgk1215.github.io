@@ -45,7 +45,15 @@ permalink: /cv/
       <div class="cv-entry">
         <div class="date">{% if x.date and x.date != "" %}{{ x.date }}{% else %}—{% endif %}</div>
         <div>
-          <strong>{{ x.degree }}</strong><br>
+          {% assign degree_parts = x.degree | split: ", " %}
+          <strong>
+            {{ degree_parts[0] }},
+            {% if x.field_url and x.field_url != "" %}
+              <a class="institution-link" href="{{ x.field_url }}">{{ degree_parts[1] }}</a>
+            {% else %}
+              {{ degree_parts[1] }}
+            {% endif %}
+          </strong><br>
           {% if x.url and x.url != "" %}
             <a class="institution-link" href="{{ x.url }}">{{ x.institution }}</a>
           {% else %}
