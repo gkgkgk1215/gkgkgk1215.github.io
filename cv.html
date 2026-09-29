@@ -26,8 +26,8 @@ permalink: /cv/
   <header class="cv-header">
     <h1>{{ p.name }}</h1>
     <div><strong>{{ p.title }}</strong></div>
-    <div><a class="affiliation-link" href="{{ p.department_url }}">{{ p.department }}</a></div>
-    <div><a class="affiliation-link" href="{{ p.institution_url }}">{{ p.institution }}</a></div>
+    <div><a class="institution-link" href="{{ p.department_url }}">{{ p.department }}</a></div>
+    <div><a class="institution-link" href="{{ p.institution_url }}">{{ p.institution }}</a></div>
     <div>{{ p.address }}</div>
     <div class="contact-line">Email: {% for email in p.emails %}<a href="mailto:{{ email }}">{{ email }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</div>
     <div class="contact-line">Website: <a href="{{ p.website }}">SURGLAB</a></div>
