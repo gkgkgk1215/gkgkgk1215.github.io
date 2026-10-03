@@ -171,25 +171,6 @@
     <p><a href="/cv/#awards">All honors &amp; awards →</a></p>
   </section>
 
-  {% if h.teaching and h.teaching != empty %}
-    <section id="teaching">
-      <h2>Teaching</h2>
-      <ul class="list dated-list">
-        {% for x in h.teaching %}
-          <li class="dated-entry">
-            <span class="date">{{ x.term }}</span>
-            <div class="entry-body teaching-courses">
-              {% for c in x.courses %}
-                <span class="course-line">
-                  {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}, {{ x.institution }}
-                </span>
-              {% endfor %}
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
-    </section>
-  {% endif %}
 
   <footer>
     CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y-%m-%d" }}

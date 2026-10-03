@@ -7,6 +7,7 @@ permalink: /cv/
 {% assign exp = site.data.experience %}
 {% assign awards = site.data.awards %}
 {% assign service = site.data.service %}
+{% assign teaching = site.data.site.teaching %}
 {% assign talks = site.data.talks %}
 {% assign pubs = site.data.publications %}
 {% assign patents = site.data.patents %}
@@ -109,6 +110,24 @@ permalink: /cv/
       <ul class="service-list">{% for x in group[1] %}<li>{{ x }}</li>{% endfor %}</ul>
     {% endfor %}
   </section>
+
+  {% if teaching and teaching != empty %}
+    <section id="teaching">
+      <h2>Teaching</h2>
+      {% for x in teaching %}
+        <div class="cv-entry">
+          <div class="date">{{ x.term }}</div>
+          <div class="teaching-courses">
+            {% for c in x.courses %}
+              <span class="course-line">
+                {{ c.name }}{% if c.code and c.code != "" %} ({{ c.code }}){% endif %}, {{ x.institution }}
+              </span>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
 
   <section id="talks">
     <h2>Invited Talks</h2>
