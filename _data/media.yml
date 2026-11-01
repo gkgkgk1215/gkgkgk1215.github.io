@@ -1,0 +1,70 @@
+- date: "2026-07-06"
+  title: "'2026 Humanoid Challenge' concludes after competition among 12 university teams"
+  source: Dailian
+  type: News
+  summary: DGIST SurGLab received the Minister of Trade, Industry and Energy Excellence Award (2nd overall) after completing four manufacturing-field Missions.
+  url: "https://www.dailian.co.kr/news/view/1663755/2026-%ED%9C%B4%EB%A8%B8%EB%85%B8%EC%9D%B4%EB%93%9C%EC%B1%8C%EB%A6%B0%EC%A7%80-%EC%84%B1%ED%99%A9%EB%A6%AC-%ED%8F%90%EB%A7%89-2026"
+  featured: true
+- date: "2026-07-03"
+  title: "2026 Humanoid Challenge — SurGLab highlight video"
+  source: YouTube
+  type: Video
+  summary: Video highlight of SurGLab's humanoid robot performing the competition's manufacturing Missions.
+  url: "https://youtu.be/EjSdv8x86pc?si=vC8yMNYHyUMtbE7Y"
+  featured: true
+- date: "2026-04-10"
+  title: "RB-Y1 humanoid laparoscopic surgical system demonstration"
+  source: YouTube Shorts
+  type: Video
+  summary: Short demonstration of the RB-Y1-based humanoid surgical system recognized at the Humanoid Real-World Challenge.
+  url: "https://www.youtube.com/shorts/pMWSY-3mF9Q"
+  featured: true
+- date: "2025-12-29"
+  title: "Minho Hwang, DGIST: Turning next-generation flexible surgical robots and robot automation into reality"
+  source: Electronic Times
+  type: Profile
+  summary: A scientist profile covering SurGLab's flexible surgical robots, shared autonomy, and field-oriented robot manipulation research.
+  url: "https://www.etnews.com/20251222000068"
+  featured: true
+- date: "2024-12-02"
+  title: "Young Robot Engineer (76): Professor Minho Hwang, DGIST"
+  source: The Robot Newspaper
+  type: Interview
+  summary: An interview tracing research from K-FLEX and surgical-robot automation to precision manipulation and the lab's future directions.
+  url: "https://www.irobotnews.com/news/articleView.html?idxno=36861"
+  featured: true
+- date: "2023-06-12"
+  title: "MERRIC Interview: Surgical Robotics and Robotic Manipulation"
+  source: MERRIC
+  type: Interview
+  summary: A research interview introducing flexible surgical robots, robotic manipulation, and SurGLab's research agenda.
+  url: "https://www.materic.or.kr/v2/mp/content.asp?f_id=141&page=1&listType=20&s_kinds=&s_word=&listCnt="
+  featured: false
+- date: "2022-07-24"
+  title: "Robot Outperforms a Surgeon in a Precision Training Task"
+  source: IEEE Spectrum
+  type: Feature
+  summary: An AI-trained da Vinci Research Kit matched a surgeon's accuracy and completed the most difficult bilateral transfer task faster and more consistently.
+  url: "https://spectrum.ieee.org/robot-outperforms-a-surgeon-in-a-precision-training-task"
+  featured: true
+- date: "2021-04-30"
+  title: "The Robot Surgeon Will See You Now"
+  source: The New York Times
+  type: Feature
+  summary: A feature on efforts to use artificial intelligence to automate surgical subtasks, including da Vinci Research Kit experiments at UC Berkeley.
+  url: "https://www.nytimes.com/2021/04/30/technology/robot-surgery-surgeon.html"
+  featured: true
+- date: "2018-08-16"
+  title: "K-FLEX performs scar-free gallbladder surgery through a natural orifice"
+  source: JoongAng Ilbo
+  type: News
+  summary: The article highlights K-FLEX's successful porcine gallbladder trial and the compact joint technology that doubled force while halving size.
+  url: "https://www.joongang.co.kr/article/22891240#home"
+  featured: true
+- date: "2018-08-16"
+  title: "K-FLEX flexible endoscopic surgery robot demonstration"
+  source: YouTube
+  type: Video
+  summary: Video demonstration of the flexible endoscopic surgical robot and its minimally invasive surgical workflow.
+  url: "https://www.youtube.com/watch?v=udHoam82Ikw"
+  featured: false
