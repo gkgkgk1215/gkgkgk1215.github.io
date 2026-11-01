@@ -5,11 +5,13 @@
 {% assign edu = site.data.education %}
 {% assign awards = site.data.awards %}
 {% assign pubs = site.data.publications %}
+{% assign media = site.data.media %}
 
 {% assign selected_journal = pubs.journal | where: "selected", true %}
 {% assign selected_conference = pubs.conference | where: "selected", true %}
 {% assign selected_pubs = selected_journal | concat: selected_conference | sort: "home_rank" %}
 {% assign selected_awards = awards | where: "selected", true | sort: "home_rank" %}
+{% assign featured_media = media | where: "featured", true %}
 
 <!doctype html>
 <html lang="en">
@@ -46,6 +48,7 @@
 
     <nav>
       <a href="/cv/">CV</a>
+      <a href="/media/">Media</a>
       {% for link in p.links %}
         {% if link.url and link.url != "" %}
           <a href="{{ link.url }}">{{ link.label }}</a>
@@ -129,6 +132,22 @@
     </ul>
   </section>
 
+  <section id="media-features">
+    <h2>Media &amp; Features</h2>
+    <ul class="list dated-list">
+      {% for x in featured_media limit:6 %}
+        <li class="dated-entry">
+          <span class="date">{{ x.date }}</span>
+          <div class="entry-body">
+            <div><a href="{{ x.url }}"><strong>{{ x.title }}</strong></a></div>
+            <div class="detail">{{ x.source }} · {{ x.summary }}</div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+    <p><a href="/media/">Full media list →</a></p>
+  </section>
+
   <section id="selected-publications">
     <h2>Selected Publications</h2>
     <ol class="citation-list compact">
@@ -170,7 +189,6 @@
     </ul>
     <p><a href="/cv/#awards">All honors &amp; awards →</a></p>
   </section>
-
 
   <footer>
     CV source last updated {{ p.last_updated }} · Site generated {{ site.time | date:"%Y-%m-%d" }}
