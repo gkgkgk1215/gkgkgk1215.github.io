@@ -1,0 +1,115 @@
+name: Apply menu and media cleanup
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-menu-media-cleanup.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update site content
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          def replace_once(text, old, new, label):
+              if old not in text:
+                  raise RuntimeError(f"Target not found: {label}")
+              return text.replace(old, new, 1)
+
+          # 1) Remove the team-name detail from the MICCAI award.
+          awards_path = Path("_data/awards.yml")
+          awards = awards_path.read_text(encoding="utf-8")
+          awards = awards.replace(
+              "  - 'SurGLab team: Ihsan Ullah, Jonghyun Kang, SeongWon Won, and Minho Hwang'\n",
+              "",
+          )
+          awards_path.write_text(awards, encoding="utf-8")
+
+          # 2) Simplify Home navigation and open external profile links in new tabs.
+          index_path = Path("index.html")
+          index = index_path.read_text(encoding="utf-8")
+          index = replace_once(
+              index,
+              '          <a href="{{ link.url }}">{{ link.label }}</a>',
+              '          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>',
+              "Home external profile links",
+          )
+          index = replace_once(
+              index,
+              '''      {% for email in p.emails %}\n        <a href="mailto:{{ email }}">Email</a>\n        {% break %}\n      {% endfor %}\n''',
+              "",
+              "Home Email tab",
+          )
+          index = replace_once(
+              index,
+              '<a class="institution-link" href="{{ p.surglab_url }}">SURGLAB</a>',
+              '<a class="institution-link" href="{{ p.surglab_url }}" target="_blank" rel="noopener noreferrer">SURGLAB</a>',
+              "Home About SURGLAB link",
+          )
+          index_path.write_text(index, encoding="utf-8")
+
+          # 3) Keep only Home + print guidance in the CV toolbar; open SURGLAB externally.
+          cv_path = Path("cv.html")
+          cv = cv_path.read_text(encoding="utf-8")
+          cv = replace_once(
+              cv,
+              '''  <div class="screen-only cv-toolbar">\n    <span><a href="/">← Home</a> · <a href="/media/">Media</a></span>\n    <span>Print → Save as PDF</span>\n  </div>''',
+              '''  <div class="screen-only cv-toolbar">\n    <a href="/">← Home</a>\n    <span>Print → Save as PDF</span>\n  </div>''',
+              "CV toolbar",
+          )
+          cv = replace_once(
+              cv,
+              '<div class="contact-line">Website: <a href="{{ p.website }}">SURGLAB</a></div>',
+              '<div class="contact-line">Website: <a href="{{ p.website }}" target="_blank" rel="noopener noreferrer">SURGLAB</a></div>',
+              "CV SURGLAB link",
+          )
+          cv_path.write_text(cv, encoding="utf-8")
+
+          # 4) Media page: only a single back-to-Home link at the top.
+          media_page_path = Path("media.html")
+          media_page = media_page_path.read_text(encoding="utf-8")
+          old_header = '''  <header>\n    <h1>Media &amp; Features</h1>\n    <div class="muted">Selected news coverage, interviews, and videos featuring Minho Hwang and SurGLab.</div>\n    <nav>\n      <a href="/">Home</a>\n      <a href="/cv/">CV</a>\n      <a href="{{ p.surglab_url }}">SURGLAB</a>\n      <a href="https://scholar.google.com/citations?user=_RAeAjoAAAAJ&hl=ko">Google Scholar</a>\n      <a href="https://github.com/gkgkgk1215">GitHub</a>\n      <a href="mailto:{{ p.emails[0] }}">Email</a>\n    </nav>\n  </header>'''
+          new_header = '''  <div class="cv-toolbar">\n    <a href="/">← Home</a>\n  </div>\n\n  <header>\n    <h1>Media &amp; Features</h1>\n    <div class="muted">Selected news coverage, interviews, and videos featuring Minho Hwang and SurGLab.</div>\n  </header>'''
+          media_page = replace_once(media_page, old_header, new_header, "Media header navigation")
+          media_page_path.write_text(media_page, encoding="utf-8")
+
+          # 5) Reframe the former July 3 highlight video as the ministry research spotlight.
+          media_data_path = Path("_data/media.yml")
+          media_data = media_data_path.read_text(encoding="utf-8")
+          blocks = re.split(r"(?=^- date: )", media_data, flags=re.M)
+          blocks = [b for b in blocks if b.strip()]
+          found = False
+          updated = []
+          for block in blocks:
+              if "https://youtu.be/EjSdv8x86pc?si=vC8yMNYHyUMtbE7Y" in block:
+                  block = '''- date: "2026-10-29"\n  title: "SurGLab Featured in the Ministry’s Research Spotlight"\n  source: Ministry of Trade, Industry and Energy\n  type: Research Spotlight\n  summary: Featured in the ministry’s research spotlight, SurGLab’s young researchers share the dream behind their work and their efforts to build the future of precision surgical and humanoid robotics.\n  url: "https://youtu.be/EjSdv8x86pc?si=vC8yMNYHyUMtbE7Y"\n  featured: true\n'''
+                  found = True
+              updated.append(block)
+          if not found:
+              raise RuntimeError("Ministry spotlight video entry not found")
+
+          def date_of(block):
+              m = re.search(r'^- date: "([^"]+)"', block, flags=re.M)
+              return m.group(1) if m else ""
+
+          updated.sort(key=date_of, reverse=True)
+          media_data_path.write_text("".join(updated), encoding="utf-8")
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/awards.yml _data/media.yml index.html cv.html media.html
+          git commit -m "Simplify navigation and revise media spotlight"
+          git push
