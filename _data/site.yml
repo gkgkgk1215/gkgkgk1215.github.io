@@ -1,4 +1,7 @@
 news:
+  - date: "2026-09-27"
+    text: SurGLab won 2nd Place in the MultiBypass Surgical Action Triplet Challenge at MICCAI 2026.
+    url: /cv/#awards
   - date: "2026-09-01"
     text: Promoted to Associate Professor at DGIST.
     url: /cv/#affiliations
@@ -19,11 +22,16 @@ news:
     url: /cv/#awards
 
 teaching:
+  - term: 2027 Spring
+    institution: DGIST
+    courses:
+      - name: Robot Dynamics and Control
+        code: MECH401
   - term: 2026 Fall
     institution: DGIST
     courses:
       - name: Intelligent Robot Manipulation
-        code: ''
+        code: RT758
   - term: 2026 Spring
     institution: DGIST
     courses:
