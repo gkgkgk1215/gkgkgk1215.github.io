@@ -1,0 +1,51 @@
+---
+title: Media & Features
+permalink: /media/
+---
+{% assign p = site.data.profile %}
+{% assign media = site.data.media %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Media &amp; Features · {{ p.display_name }}</title>
+  <meta name="description" content="Media coverage, interviews, and videos featuring Minho Hwang and SurGLab.">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
+</head>
+<body>
+<main class="page">
+  <header>
+    <h1>Media &amp; Features</h1>
+    <div class="muted">Selected news coverage, interviews, and videos featuring Minho Hwang and SurGLab.</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/cv/">CV</a>
+      <a href="{{ p.surglab_url }}">SURGLAB</a>
+      <a href="https://scholar.google.com/citations?user=_RAeAjoAAAAJ&hl=ko">Google Scholar</a>
+      <a href="https://github.com/gkgkgk1215">GitHub</a>
+      <a href="mailto:{{ p.emails[0] }}">Email</a>
+    </nav>
+  </header>
+
+  <section id="media">
+    <ul class="list dated-list">
+      {% for x in media %}
+        <li class="dated-entry">
+          <span class="date">{{ x.date }}</span>
+          <div class="entry-body">
+            <div><a href="{{ x.url }}"><strong>{{ x.title }}</strong></a></div>
+            <div class="meta">{{ x.source }} · {{ x.type }}</div>
+            <div class="detail">{{ x.summary }}</div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <footer>
+    Curated coverage; duplicate syndications and substantially overlapping reports are omitted.
+  </footer>
+</main>
+</body>
+</html>
