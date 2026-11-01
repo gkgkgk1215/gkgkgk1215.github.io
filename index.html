@@ -51,12 +51,8 @@
       <a href="/media/">Media</a>
       {% for link in p.links %}
         {% if link.url and link.url != "" %}
-          <a href="{{ link.url }}">{{ link.label }}</a>
+          <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
         {% endif %}
-      {% endfor %}
-      {% for email in p.emails %}
-        <a href="mailto:{{ email }}">Email</a>
-        {% break %}
       {% endfor %}
     </nav>
   </header>
@@ -67,7 +63,7 @@
       I am an Associate Professor at
       <a class="institution-link" href="{{ p.institution_url }}">DGIST</a>
       and director of
-      <a class="institution-link" href="{{ p.surglab_url }}">SURGLAB</a>.
+      <a class="institution-link" href="{{ p.surglab_url }}" target="_blank" rel="noopener noreferrer">SURGLAB</a>.
       {{ p.about_research }}
     </p>
     <p>{{ p.about_goal }}</p>

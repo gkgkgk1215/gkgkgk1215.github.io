@@ -1,16 +1,16 @@
+- date: "2026-10-29"
+  title: "SurGLab Featured in the Ministry’s Research Spotlight"
+  source: Ministry of Trade, Industry and Energy
+  type: Research Spotlight
+  summary: Featured in the ministry’s research spotlight, SurGLab’s young researchers share the dream behind their work and their efforts to build the future of precision surgical and humanoid robotics.
+  url: "https://youtu.be/EjSdv8x86pc?si=vC8yMNYHyUMtbE7Y"
+  featured: true
 - date: "2026-07-06"
   title: "'2026 Humanoid Challenge' concludes after competition among 12 university teams"
   source: Dailian
   type: News
   summary: DGIST SurGLab received the Minister of Trade, Industry and Energy Excellence Award (2nd overall) after completing four manufacturing-field Missions.
   url: "https://www.dailian.co.kr/news/view/1663755/2026-%ED%9C%B4%EB%A8%B8%EB%85%B8%EC%9D%B4%EB%93%9C%EC%B1%8C%EB%A6%B0%EC%A7%80-%EC%84%B1%ED%99%A9%EB%A6%AC-%ED%8F%90%EB%A7%89-2026"
-  featured: true
-- date: "2026-07-03"
-  title: "2026 Humanoid Challenge — SurGLab highlight video"
-  source: YouTube
-  type: Video
-  summary: Video highlight of SurGLab's humanoid robot performing the competition's manufacturing Missions.
-  url: "https://youtu.be/EjSdv8x86pc?si=vC8yMNYHyUMtbE7Y"
   featured: true
 - date: "2026-04-10"
   title: "RB-Y1 humanoid laparoscopic surgical system demonstration"
