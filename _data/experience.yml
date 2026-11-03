@@ -7,7 +7,8 @@
   organization: DexRobotics Inc.
   location: Daegu, South Korea
   position: Founder & CEO
-  url: ''
+  url: 'https://dexrobotics-website.gkgk1215.workers.dev/'
+  external: true
 - period: "2025-08-01 – 2025-10-01"
   organization: University of California, San Diego
   location: La Jolla, CA, USA

@@ -32,7 +32,7 @@ permalink: /cv/
     <div>{{ p.title }}</div>
     <div><a class="institution-link" href="{{ p.department_url }}">{{ p.department }}</a></div>
     <div><a class="institution-link" href="{{ p.institution_url }}">{{ p.institution }}</a></div>
-    <div>Founder &amp; CEO, DexRobotics Inc.</div>
+    <div>Founder &amp; CEO, <a class="institution-link" href="{{ p.dexrobotics_url }}" target="_blank" rel="noopener noreferrer">DexRobotics Inc.</a></div>
     <div>{{ p.address }}</div>
     <div class="contact-line">Email: {% for email in p.emails %}<a href="mailto:{{ email }}">{{ email }}</a>{% unless forloop.last %} / {% endunless %}{% endfor %}</div>
     <div class="contact-line">Website: <a class="cv-site-link" href="{{ p.website }}" target="_blank" rel="noopener noreferrer">{{ p.website }}</a> (SURGLAB)</div>
@@ -82,7 +82,7 @@ permalink: /cv/
         <div>
           <strong>
             {% if x.url and x.url != "" %}
-              <a class="institution-link" href="{{ x.url }}">{{ x.organization }}</a>
+              <a class="institution-link" href="{{ x.url }}"{% if x.external %} target="_blank" rel="noopener noreferrer"{% endif %}>{{ x.organization }}</a>
             {% else %}
               {{ x.organization }}
             {% endif %}
