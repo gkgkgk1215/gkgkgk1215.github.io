@@ -158,6 +158,12 @@
           {{ x.home_authors | replace: "M. Hwang", "<strong>M. Hwang</strong>" }}
           <br>
           <em>{{ x.home_venue }}</em>
+          {% if x.pub and x.pub != "" %}
+            <a href="{{ x.pub }}" target="_blank" rel="noopener noreferrer">[pub link]</a>
+          {% endif %}
+          {% if x.pdf and x.pdf != "" %}
+            <a href="{{ x.pdf }}" target="_blank" rel="noopener noreferrer">[pdf]</a>
+          {% endif %}
         </li>
       {% endfor %}
     </ol>
