@@ -110,6 +110,17 @@ a:visited {
   text-decoration: none;
 }
 
+/* Keep explicit publication and website links visible in printed PDFs. */
+.pub-links a,
+.pub-links a:visited,
+.cv-site-link,
+.cv-site-link:visited {
+  color: #174ea6 !important;
+  text-decoration: underline;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
 footer {
   display: none;
 }
